@@ -51,6 +51,7 @@ function kebabToSnake(str) {
             .replace("ő", "o")
             .replace("ú", "u")
             .replace("ű", "u")
+            .replace("ü", "u")
             .replace(/[^_!a-zA-Z ]/g, "")
             .toLowerCase();
 
@@ -79,10 +80,12 @@ pool.query('TRUNCATE now_playing_movies;', (error, results) => {
 
 });
 
+const cinemaCityDate = moment().add(1, 'days').format("YYYY-MM-DD");
 
 request(
-    'https://www.cinemacity.hu/hu/data-api-service/v1/quickbook/10102/film-events/in-cinema/1132/at-date/2019-04-27?attr=&lang=hu_HU',
+    'https://www.cinemacity.hu/hu/data-api-service/v1/quickbook/10102/film-events/in-cinema/1132/at-date/' + cinemaCityDate + '?attr=&lang=hu_HU',
     function(error, response, body) {
+        console.log('cinemacity', body);
 
         JSON.parse(body).body.films.forEach(function(value) {
             value.attributeIds.forEach(function(data) {
@@ -92,44 +95,57 @@ request(
             });
         });
 
-
-
-        /*var list = require('./cinemacity.json');
-
-        var imdb = require('./imdb.json');
-
-        const utf8 = require('utf8');
-        */
-
-
-
-
-        //console.log('unique',getUnique(select,'name'));
-
         getUnique(select, 'name').forEach(function(data) {
             request(
-                //'https://www.cinemacity.hu/hu/data-api-service/v1/quickbook/10102/film-events/in-cinema/1132/at-date/2019-04-25?attr=&lang=hu_HU',
-                //'https://v2.sg.media-imdb.com/suggestion/'+ data.name.charAt(0).toLowerCase() + '/' + data.name.toLowerCase().json,
-                'https://v2.sg.media-imdb.com/suggestion/' + kebabToSnake(data.name).charAt(0).toLowerCase() + '/' + kebabToSnake(data.name) + '.json',
+                'https://v2.sg.media-imdb.com/suggestion/' +
+                kebabToSnake(data.name)
+                .charAt(0)
+                .toLowerCase() +
+                '/' +
+                kebabToSnake(data.name) +
+                '.json',
                 function(error, response, body) {
-                    //console.log('error:', error); // Print the error if one occurred
-                    //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-                    //console.log('body:', JSON.parse(body).body.films); // Print the HTML for the Google homepage.
+
+                    //console.log('-------', body);
 
                     JSON.parse(body).d.forEach(function(data2) {
+
                         if (data2.y >= moment().format('YYYY') - 1 && typeof data2.v !== 'undefined') {
 
-                            pool.query('INSERT INTO now_playing_movies ( movie_name, imdb_id, genre, image, originalname) VALUES ($1, $2, $3, $4, $5)',
-                                [data.name, data2.id, data.attr, data2.i.imageUrl, data2.l],
-                                (error, results) => {
-                                    //console.log(error, results);
-                                    if (error) {
-                                        console.log('an error occured');
-                                    }
-                                    console.log('ok done');
+                            request(
+                                'http://www.omdbapi.com/?apikey=13b6a95b&i=' + data2.id,
+                                function(error, response, body) {
+                                    request(
+                                        'https://api.themoviedb.org/3/movie/' + data2.id + '/external_ids?api_key=f4e6009df6f9b64f5063de615df82bf9',
+                                        function(error, response, themoviedb) {
 
-                                })
+                                            //console.log('themoviedb', JSON.parse(themoviedb).id);
+                                            request(
+                                                'https://api.themoviedb.org/3/movie/' + JSON.parse(themoviedb).id + '/videos?api_key=f4e6009df6f9b64f5063de615df82bf9&language=en-US',
+                                                function(error, response, themoviedb_videos) {
+
+
+                                                    JSON.parse(themoviedb_videos).results.forEach(function(themoviedb_videos_results) {
+
+                                                        console.log('themoviedb_videos', themoviedb_videos_results);
+                                                        let trailer = [{ site: themoviedb_videos_results.site, key: themoviedb_videos_results.key, type: themoviedb_videos_results.type }];
+
+                                                        pool.query('INSERT INTO now_playing_movies ( movie_name, imdb_id, genre, image, originalname, imdbRating, imdbvotes, themoviedb_id, trailer) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)',
+                                                            [data.name, data2.id, data.attr, data2.i.imageUrl, data2.l, JSON.parse(body).imdbRating, JSON.parse(body).imdbVotes, JSON.parse(themoviedb).id, trailer],
+                                                            (error, results) => {
+                                                                //console.log(error, results);
+                                                                if (error) {
+                                                                    console.log('an error occured');
+                                                                }
+                                                                console.log('ok done');
+
+                                                            });
+                                                    });
+                                                });
+                                        });
+                                });
                         }
+
                     });
                 });
         });
