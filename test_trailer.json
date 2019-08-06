@@ -1,0 +1,1340 @@
+{  
+   "id":2162,
+   "slug":"2162-hotel-mumbai",
+   "hu_title":"Hotel Mumbai",
+   "title":"Hotel Mumbai",
+   "original_title":"Hotel Mumbai",
+   "plot":"Hotel Mumbai tells the astonishing true story of the victims and survivors of the devastating attacks on Mumbai in 2008. A story which fearlessly tackles the defining global issues of our time. A story about ordinary people. Real people. People of all races, all colours, all creeds, binding together in a gruelling fight for survival. A story that celebrates humanity\u0027s highest ideals - compassion, courage, resilience and an unwavering desire to live.",
+   "hu_plot":"T\u00edz elsz\u00e1nt terrorista k\u00f6t ki Mumbai partjain\u00e1l egy motorcs\u00f3nakkal. C\u00e9ljuk t\u00f6bb helysz\u00ednen mer\u00e9nylet elk\u00f6vet\u00e9se a hatalmas indiai metropoliszban, amelyekkel a lehet\u0151 legt\u00f6bb \u00e1ldozatot akarj\u00e1k szedni. Utols\u00f3 c\u00e9lpontjukk\u00e9nt benyomulnak a vil\u00e1gh\u00edr\u0171 Taj Hotel luxussz\u00e1llod\u00e1ba. Am\u00edg a kommand\u00f3sok meg\u00e9rkeznek, a hotelben egy \u00f6r\u00f6kk\u00e9val\u00f3s\u00e1gnak t\u0171n\u0151 macska-eg\u00e9r j\u00e1tszma kezd\u0151dik a fegyveresek, valamint az \u00e1rtatlan turist\u00e1k \u00e9s alkalmazottak k\u00f6z\u00f6tt. A hotel alkalmazottjai k\u00f6z\u00fcl n\u00e9h\u00e1nyan a menek\u00fcl\u00e9s helyett ink\u00e1bb a marad\u00e1s mellett d\u00f6ntenek, s \u00e9let\u00fck kock\u00e1ztat\u00e1s\u00e1val igyekeznek v\u00e9deni a turist\u00e1kat.\r\n\r\n*A Hotel Mumbai megt\u00f6rt\u00e9nt esem\u00e9nyeken alapul. A 2008-as Mumbai terrormer\u00e9nyletek sor\u00e1n n\u00e9gy nap alatt 10 iszlamista terrorista 12 szervezett robbant\u00e1st \u00e9s l\u00f6v\u00f6ld\u00f6z\u00e9st hajtott v\u00e9gre v\u00e1rosszerte. A november 26-a \u00e9s 29-e k\u00f6z\u00f6tt tart\u00f3 mer\u00e9nyletekben legkevesebb 174 ember halt meg, k\u00f6zt\u00fck kilenc terrorista, t\u00f6bb mint 300 ember pedig megsebes\u00fclt. Anthony Maras az esem\u00e9nyek alapj\u00e1n, az \u00e1ldozatok eml\u00e9k\u00e9nek tiszteletben tart\u00e1sa mellett k\u00e9sz\u00edtett a Taj Hotel-beli esem\u00e9nyekr\u0151l filmet. Az alkot\u00e1s vil\u00e1gpremierje a vil\u00e1g egyik legrangosabb filmfesztiv\u00e1lj\u00e1n, a Toront\u00f3i Nemzetk\u00f6zi Filmfesztiv\u00e1lon volt, majd bej\u00e1rta a vil\u00e1g filmfesztiv\u00e1ljait. A film egyik producere, egyben f\u0151szerepl\u0151je a Gett\u00f3milliomos \u00e9s Oroszl\u00e1n r\u00e9v\u00e9n vil\u00e1gh\u00edr\u0171, Oscar-d\u00edjra jel\u00f6lt brit sz\u00edn\u00e9sz, Dev Patel (H\u00edrad\u00f3sok, Keleti nyugalom \u2013 Marigold Hotel, Chappie, Az utols\u00f3 l\u00e9ghajl\u00edt\u00f3). Mellette felt\u0171nik a filmben t\u00f6bbek k\u00f6z\u00f6tt a Golden Globe-d\u00edjra jel\u00f6lt Armie Hammer (Sz\u00f3l\u00edts a neveden, \u00c9jszakai ragadoz\u00f3k, Az U.N.C.L.E. embere, A mag\u00e1nyos lovas) \u00e9s Jason Isaacs (A hazafi, Harry Potter \u00e9s a titkok kamr\u00e1ja, P\u00e1n P\u00e9ter, Szt\u00e1lin hal\u00e1la, A s\u00f3lyom v\u00e9gvesz\u00e9lyben) is.*",
+   "plot_stripped":"Hotel Mumbai tells the astonishing true story of the victims and survivors of the devastating attacks on Mumbai in 2008. A story which fearlessly tackles the defining global issues of our time. A story about ordinary people. Real people. People of all races, all colours, all creeds, binding together in a gruelling fight for survival. A story that celebrates humanity\u0027s highest ideals - compassion, courage, resilience and an unwavering desire to live.",
+   "hu_plot_stripped":"T\u00edz elsz\u00e1nt terrorista k\u00f6t ki Mumbai partjain\u00e1l egy motorcs\u00f3nakkal. C\u00e9ljuk t\u00f6bb helysz\u00ednen mer\u00e9nylet elk\u00f6vet\u00e9se a hatalmas indiai metropoliszban, amelyekkel a lehet\u0151 legt\u00f6bb \u00e1ldozatot akarj\u00e1k szedni. Utols\u00f3 c\u00e9lpontjukk\u00e9nt benyomulnak a vil\u00e1gh\u00edr\u0171 Taj Hotel luxussz\u00e1llod\u00e1ba. Am\u00edg a kommand\u00f3sok meg\u00e9rkeznek, a hotelben egy \u00f6r\u00f6kk\u00e9val\u00f3s\u00e1gnak t\u0171n\u0151 macska-eg\u00e9r j\u00e1tszma kezd\u0151dik a fegyveresek, valamint az \u00e1rtatlan turist\u00e1k \u00e9s alkalmazottak k\u00f6z\u00f6tt. A hotel alkalmazottjai k\u00f6z\u00fcl n\u00e9h\u00e1nyan a menek\u00fcl\u00e9s helyett ink\u00e1bb a marad\u00e1s mellett d\u00f6ntenek, s \u00e9let\u00fck kock\u00e1ztat\u00e1s\u00e1val igyekeznek v\u00e9deni a turist\u00e1kat.\r\n\r\nA Hotel Mumbai megt\u00f6rt\u00e9nt esem\u00e9nyeken alapul. A 2008-as Mumbai terrormer\u00e9nyletek sor\u00e1n n\u00e9gy nap alatt 10 iszlamista terrorista 12 szervezett robbant\u00e1st \u00e9s l\u00f6v\u00f6ld\u00f6z\u00e9st hajtott v\u00e9gre v\u00e1rosszerte. A november 26-a \u00e9s 29-e k\u00f6z\u00f6tt tart\u00f3 mer\u00e9nyletekben legkevesebb 174 ember halt meg, k\u00f6zt\u00fck kilenc terrorista, t\u00f6bb mint 300 ember pedig megsebes\u00fclt. Anthony Maras az esem\u00e9nyek alapj\u00e1n, az \u00e1ldozatok eml\u00e9k\u00e9nek tiszteletben tart\u00e1sa mellett k\u00e9sz\u00edtett a Taj Hotel-beli esem\u00e9nyekr\u0151l filmet. Az alkot\u00e1s vil\u00e1gpremierje a vil\u00e1g egyik legrangosabb filmfesztiv\u00e1lj\u00e1n, a Toront\u00f3i Nemzetk\u00f6zi Filmfesztiv\u00e1lon volt, majd bej\u00e1rta a vil\u00e1g filmfesztiv\u00e1ljait. A film egyik producere, egyben f\u0151szerepl\u0151je a Gett\u00f3milliomos \u00e9s Oroszl\u00e1n r\u00e9v\u00e9n vil\u00e1gh\u00edr\u0171, Oscar-d\u00edjra jel\u00f6lt brit sz\u00edn\u00e9sz, Dev Patel (H\u00edrad\u00f3sok, Keleti nyugalom \u2013 Marigold Hotel, Chappie, Az utols\u00f3 l\u00e9ghajl\u00edt\u00f3). Mellette felt\u0171nik a filmben t\u00f6bbek k\u00f6z\u00f6tt a Golden Globe-d\u00edjra jel\u00f6lt Armie Hammer (Sz\u00f3l\u00edts a neveden, \u00c9jszakai ragadoz\u00f3k, Az U.N.C.L.E. embere, A mag\u00e1nyos lovas) \u00e9s Jason Isaacs (A hazafi, Harry Potter \u00e9s a titkok kamr\u00e1ja, P\u00e1n P\u00e9ter, Szt\u00e1lin hal\u00e1la, A s\u00f3lyom v\u00e9gvesz\u00e9lyben) is.",
+   "age_limit":[  
+      "16",
+      "Tizenhat \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+   ],
+   "year":2018,
+   "hu_release":"2019-04-18",
+   "hu_release_week":[  
+      "2019\/16",
+      "2019-04-15",
+      "2019-04-21"
+   ],
+   "hu_release_nice":"2019. \u00e1prilis 18.",
+   "skip":0,
+   "runtime":125,
+   "raw_genres":[  
+      "Action",
+      "Drama",
+      "History",
+      "Thriller"
+   ],
+   "genre":[  
+      "akci\u00f3",
+      "dr\u00e1ma",
+      "t\u00f6rt\u00e9nelmi",
+      "thriller"
+   ],
+   "genres":"feliratos t\u00f6rt\u00e9nelmi akci\u00f3-dr\u00e1ma thriller",
+   "genres_nosub":"t\u00f6rt\u00e9nelmi akci\u00f3-dr\u00e1ma thriller",
+   "country":[  
+      "AU",
+      "US",
+      "IN"
+   ],
+   "countries":"ausztr\u00e1liai-amerikai-indiai",
+   "distributor":"Vertigo M\u00e9dia Kft.",
+   "colors":[  
+      [  
+         "71",
+         "39",
+         "38"
+      ],
+      [  
+         "233",
+         "173",
+         "74"
+      ]
+   ],
+   "background":"https:\/\/static.mozipremierek.hu\/media\/58\/58a8c28b0dc0a9b513e83bc7311ab088.jpg",
+   "has_trailer":true,
+   "poster_thumb":"https:\/\/static.mozipremierek.hu\/media\/1c\/thumb_1c18c0b7887d37da923bb219f5864290.jpg",
+   "poster_blur":null,
+   "rating":0.78000000000000003,
+   "norm_rating":80,
+   "norm_rating_5":4,
+   "imdb_rating":"7.8",
+   "lists":[  
+
+   ],
+   "requested":1557274310,
+   "created_at":"2019-02-15",
+   "sub":1,
+   "week":[  
+      {  
+         "id":1819,
+         "slug":"1819-a-gyaszolo-asszony-atka",
+         "hu_title":"A gy\u00e1szol\u00f3 asszony \u00e1tka",
+         "title":"The Curse of La Llorona",
+         "original_title":"The Curse of La Llorona",
+         "plot":"Ignoring the eerie warning of a troubled mother suspected of child endangerment, a social worker and her own small kids are soon drawn into a frightening supernatural realm.",
+         "hu_plot":"La Llorona. A Gy\u00e1szol\u00f3 Asszony. Egy r\u00e9miszt\u0151, nem evil\u00e1gi l\u00e9ny, amely saj\u00e1t maga okozta sz\u00f6rny\u0171 sors\u00e1t, menny \u00e9s pokol k\u00f6z\u00f6tt ragadt, \u00e9s nem tal\u00e1lja a hely\u00e9t. Valamikor r\u00e9ges-r\u00e9gen, amikor \u00e9lt, f\u00e9lt\u00e9kenys\u00e9gi roham\u00e1ban v\u00edzbe fojtotta a gyerekeit, azut\u00e1n, amikor r\u00e1j\u00f6tt, mit tett, ut\u00e1nuk ugrott. Az\u00f3ta k\u00eds\u00e9rt a F\u00f6ld\u00f6n, \u00e9s hal\u00e1lt hoznak a k\u00f6nnyei. Akik \u00e9jszaka meghallj\u00e1k a hangj\u00e1t, azok nem \u00e9rik meg a reggelt. A Gy\u00e1szol\u00f3 Asszony a hom\u00e1lyban bujk\u00e1l, gyerekekre vad\u00e1szik, \u00e9s mindenre k\u00e9pes, hogy valamik\u00e9ppen p\u00f3tolja saj\u00e1t vesztes\u00e9g\u00e9t. B\u00fcntet\u00e9se az \u00f6r\u00f6k k\u00edn, bossz\u00faja, hogy saj\u00e1t f\u00e1jdalm\u00e1t m\u00e1sok is k\u00e9nytelenek \u00e1t\u00e9lni. Ahogy telnek az \u00e9vsz\u00e1zadok, egyre rafin\u00e1ltabb m\u00f3dszerekkel, egyre kegyetlenebb elsz\u00e1nts\u00e1ggal sanyargatja az \u00e9l\u0151ket. 1970-ben \u00e9rkezett Los Angelesbe: egy szoci\u00e1lis munk\u00e1s (Linda Cardellini) \u00e9s saj\u00e1t k\u00e9t kis gyereke is k\u00e9nytelen r\u00e1j\u00f6nni, hogy a legend\u00e1k nem hazudnak. \r\n\r\nJames Wan, a F\u0171r\u00e9sz elind\u00edt\u00f3ja, a D\u00e9monok k\u00f6z\u00f6tt- \u00e9s az Annabelle-filmek valamint Az ap\u00e1ca alkot\u00f3ja a horror m\u0171faj legsikeresebb m\u0171vel\u0151je ism\u00e9t megmutatja, mennyit tud a borzongat\u00e1sr\u00f3l!",
+         "plot_stripped":"Ignoring the eerie warning of a troubled mother suspected of child endangerment, a social worker and her own small kids are soon drawn into a frightening supernatural realm.",
+         "hu_plot_stripped":"La Llorona. A Gy\u00e1szol\u00f3 Asszony. Egy r\u00e9miszt\u0151, nem evil\u00e1gi l\u00e9ny, amely saj\u00e1t maga okozta sz\u00f6rny\u0171 sors\u00e1t, menny \u00e9s pokol k\u00f6z\u00f6tt ragadt, \u00e9s nem tal\u00e1lja a hely\u00e9t. Valamikor r\u00e9ges-r\u00e9gen, amikor \u00e9lt, f\u00e9lt\u00e9kenys\u00e9gi roham\u00e1ban v\u00edzbe fojtotta a gyerekeit, azut\u00e1n, amikor r\u00e1j\u00f6tt, mit tett, ut\u00e1nuk ugrott. Az\u00f3ta k\u00eds\u00e9rt a F\u00f6ld\u00f6n, \u00e9s hal\u00e1lt hoznak a k\u00f6nnyei. Akik \u00e9jszaka meghallj\u00e1k a hangj\u00e1t, azok nem \u00e9rik meg a reggelt. A Gy\u00e1szol\u00f3 Asszony a hom\u00e1lyban bujk\u00e1l, gyerekekre vad\u00e1szik, \u00e9s mindenre k\u00e9pes, hogy valamik\u00e9ppen p\u00f3tolja saj\u00e1t vesztes\u00e9g\u00e9t. B\u00fcntet\u00e9se az \u00f6r\u00f6k k\u00edn, bossz\u00faja, hogy saj\u00e1t f\u00e1jdalm\u00e1t m\u00e1sok is k\u00e9nytelenek \u00e1t\u00e9lni. Ahogy telnek az \u00e9vsz\u00e1zadok, egyre rafin\u00e1ltabb m\u00f3dszerekkel, egyre kegyetlenebb elsz\u00e1nts\u00e1ggal sanyargatja az \u00e9l\u0151ket. 1970-ben \u00e9rkezett Los Angelesbe: egy szoci\u00e1lis munk\u00e1s (Linda Cardellini) \u00e9s saj\u00e1t k\u00e9t kis gyereke is k\u00e9nytelen r\u00e1j\u00f6nni, hogy a legend\u00e1k nem hazudnak. \r\n\r\nJames Wan, a F\u0171r\u00e9sz elind\u00edt\u00f3ja, a D\u00e9monok k\u00f6z\u00f6tt- \u00e9s az Annabelle-filmek valamint Az ap\u00e1ca alkot\u00f3ja a horror m\u0171faj legsikeresebb m\u0171vel\u0151je ism\u00e9t megmutatja, mennyit tud a borzongat\u00e1sr\u00f3l!",
+         "age_limit":[  
+            "16",
+            "Tizenhat \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2019,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":93,
+         "raw_genres":[  
+            "Horror",
+            "Mystery",
+            "Thriller"
+         ],
+         "genre":[  
+            "horror",
+            "misztikus",
+            "thriller"
+         ],
+         "genres":"misztikus horror-thriller",
+         "genres_nosub":"misztikus horror-thriller",
+         "country":[  
+            "US"
+         ],
+         "countries":"amerikai",
+         "distributor":"InterCom",
+         "colors":[  
+            [  
+               "53",
+               "43",
+               "36"
+            ],
+            [  
+               "185",
+               "188",
+               "154"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/e7\/e7f1d7c46b09f77d1e94ec6d72df6f22.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/1819-a-gyaszolo-asszony-atka.38369.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.58999999999999997,
+         "norm_rating":60,
+         "norm_rating_5":3,
+         "imdb_rating":"5.9",
+         "lists":[  
+
+         ],
+         "requested":1557273975,
+         "created_at":"2018-07-19",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":1804,
+         "slug":"1804-csodapark",
+         "hu_title":"Csodapark",
+         "title":"Wonder Park",
+         "original_title":"Wonder Park",
+         "plot":"Wonder Park tells the story of a magnificent amusement park where the imagination of a wildly creative girl named June comes alive.",
+         "hu_plot":"June, az optimista, \u00e9l\u00e9nk fant\u00e1zi\u00e1j\u00fa kisl\u00e1ny felfedezi, hogy az erd\u0151ben egy hihetetlen vid\u00e1mpark van elrejtve. A csodapark tele van fantasztikus j\u00e1t\u00e9kokkal \u00e9s vicces besz\u00e9l\u0151 \u00e1llatokkal, ugyanakkor nagy fejetlens\u00e9g uralkodik ezen a b\u00e1mulatos helyen... \r\n\r\nJune r\u00e1j\u00f6n, hogy a park a saj\u00e1t k\u00e9pzelet\u00e9nek sz\u00fcl\u00f6tte, \u00edgy csak \u0151 k\u00e9pes helyrehozni. June-ra v\u00e1r a feladat, hogy a fantasztikus \u00e1llatokkal \u00f6sszefogva megmentse ezt a var\u00e1zslatos helyet, \u00e9s \u00fajra megteremtse a csod\u00e1t a csodaparkban.",
+         "plot_stripped":"Wonder Park tells the story of a magnificent amusement park where the imagination of a wildly creative girl named June comes alive.",
+         "hu_plot_stripped":"June, az optimista, \u00e9l\u00e9nk fant\u00e1zi\u00e1j\u00fa kisl\u00e1ny felfedezi, hogy az erd\u0151ben egy hihetetlen vid\u00e1mpark van elrejtve. A csodapark tele van fantasztikus j\u00e1t\u00e9kokkal \u00e9s vicces besz\u00e9l\u0151 \u00e1llatokkal, ugyanakkor nagy fejetlens\u00e9g uralkodik ezen a b\u00e1mulatos helyen... \r\n\r\nJune r\u00e1j\u00f6n, hogy a park a saj\u00e1t k\u00e9pzelet\u00e9nek sz\u00fcl\u00f6tte, \u00edgy csak \u0151 k\u00e9pes helyrehozni. June-ra v\u00e1r a feladat, hogy a fantasztikus \u00e1llatokkal \u00f6sszefogva megmentse ezt a var\u00e1zslatos helyet, \u00e9s \u00fajra megteremtse a csod\u00e1t a csodaparkban.",
+         "age_limit":[  
+            "6",
+            "Hat \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2019,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":85,
+         "raw_genres":[  
+            "Animation",
+            "Adventure",
+            "Comedy",
+            "Family",
+            "Fantasy"
+         ],
+         "genre":[  
+            "anim\u00e1ci\u00f3s",
+            "kaland",
+            "v\u00edgj\u00e1t\u00e9k",
+            "csal\u00e1di",
+            "fantasy"
+         ],
+         "genres":"anim\u00e1ci\u00f3s csal\u00e1di kaland-v\u00edgj\u00e1t\u00e9k fantasy",
+         "genres_nosub":"anim\u00e1ci\u00f3s csal\u00e1di kaland-v\u00edgj\u00e1t\u00e9k fantasy",
+         "country":[  
+            "ES",
+            "US"
+         ],
+         "countries":"spanyol-amerikai",
+         "distributor":"UIP-Duna Film",
+         "colors":[  
+            [  
+               "64",
+               "80",
+               "143"
+            ],
+            [  
+               "210",
+               "159",
+               "138"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/c4\/c48c9b9e87a9a88a546d1087a98a1db3.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/1804-csodapark.37769.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.56999999999999995,
+         "norm_rating":60,
+         "norm_rating_5":3,
+         "imdb_rating":"5.7",
+         "lists":[  
+
+         ],
+         "requested":1557273957,
+         "created_at":"2018-07-06",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2191,
+         "slug":"2191-egy-no-fogsagban",
+         "hu_title":"Egy n\u0151 fogs\u00e1gban",
+         "title":"A Woman Captured",
+         "original_title":"Egy n\u0151 fogs\u00e1gban",
+         "plot":"A European woman has been kept by a family as a domestic slave for 10 years. Drawing courage from the filmmaker\u0027s presence, she decides to escape the unbearable oppression and become a free person.",
+         "hu_plot":"Az 52 \u00e9ves Maris t\u00edz \u00e9ve szolg\u00e1l fizet\u00e9s n\u00e9lk\u00fcl egy magyar csal\u00e1dot. Sz\u00e1ll\u00e1s\u00e9rt \u00e9s \u00e9tel\u00e9rt cser\u00e9be napi 20 \u00f3r\u00e1t dolgozik. A m\u00e9lt\u00f3s\u00e1g\u00e1t\u00f3l \u00e9s jogait\u00f3l megfosztott n\u0151 f\u00e9lelemben t\u00f6lti napjait, \u00e9vek \u00f3ta marad\u00e9kot eszik \u00e9s egy kanap\u00e9n alszik, mik\u00f6zben arr\u00f3l \u00e1lmodozik, hogy visszakapja kor\u00e1bbi \u00e9let\u00e9t. A kamera jelenl\u00e9te r\u00e1\u00e9breszti, hogy nincs teljesen egyed\u00fcl. Fokozatosan bizalm\u00e1ba fogadja a rendez\u0151t, majd lassan bar\u00e1ts\u00e1g alakul ki kett\u0151j\u00fck k\u00f6z\u00f6tt. M\u00e1sf\u00e9l \u00e9vnyi forgat\u00e1s ut\u00e1n \u00f6sszeszedi b\u00e1tors\u00e1g\u00e1t \u00e9s megosztja vele terv\u00e9t: \u201eMeg fogok sz\u00f6kni!\u201d\r\n\r\nTuza-Ritter Bernadett felkavar\u00f3 alkot\u00e1sa az els\u0151 magyar eg\u00e9szest\u00e9s dokumentumfilm, mely beker\u00fclt a Sundance Filmfesztiv\u00e1l versenyprogramj\u00e1ba. A film vil\u00e1gpremierj\u00e9t a rangos amszterdami IDFA-n tartott\u00e1k, melyet nemzetk\u00f6zi fesztiv\u00e1lk\u00f6r\u00fat k\u00f6vetett, ahol sz\u00e1mos d\u00edjat nyert \u00e9s Eur\u00f3pai Filmd\u00edjra jel\u00f6lt\u00e9k. A Magyar Filmkritikusok a legjobb dokumentumfilmnek j\u00e1r\u00f3 d\u00edjjal ismert\u00e9k el.",
+         "plot_stripped":"A European woman has been kept by a family as a domestic slave for 10 years. Drawing courage from the filmmaker\u0027s presence, she decides to escape the unbearable oppression and become a free person.",
+         "hu_plot_stripped":"Az 52 \u00e9ves Maris t\u00edz \u00e9ve szolg\u00e1l fizet\u00e9s n\u00e9lk\u00fcl egy magyar csal\u00e1dot. Sz\u00e1ll\u00e1s\u00e9rt \u00e9s \u00e9tel\u00e9rt cser\u00e9be napi 20 \u00f3r\u00e1t dolgozik. A m\u00e9lt\u00f3s\u00e1g\u00e1t\u00f3l \u00e9s jogait\u00f3l megfosztott n\u0151 f\u00e9lelemben t\u00f6lti napjait, \u00e9vek \u00f3ta marad\u00e9kot eszik \u00e9s egy kanap\u00e9n alszik, mik\u00f6zben arr\u00f3l \u00e1lmodozik, hogy visszakapja kor\u00e1bbi \u00e9let\u00e9t. A kamera jelenl\u00e9te r\u00e1\u00e9breszti, hogy nincs teljesen egyed\u00fcl. Fokozatosan bizalm\u00e1ba fogadja a rendez\u0151t, majd lassan bar\u00e1ts\u00e1g alakul ki kett\u0151j\u00fck k\u00f6z\u00f6tt. M\u00e1sf\u00e9l \u00e9vnyi forgat\u00e1s ut\u00e1n \u00f6sszeszedi b\u00e1tors\u00e1g\u00e1t \u00e9s megosztja vele terv\u00e9t: \u201eMeg fogok sz\u00f6kni!\u201d\r\n\r\nTuza-Ritter Bernadett felkavar\u00f3 alkot\u00e1sa az els\u0151 magyar eg\u00e9szest\u00e9s dokumentumfilm, mely beker\u00fclt a Sundance Filmfesztiv\u00e1l versenyprogramj\u00e1ba. A film vil\u00e1gpremierj\u00e9t a rangos amszterdami IDFA-n tartott\u00e1k, melyet nemzetk\u00f6zi fesztiv\u00e1lk\u00f6r\u00fat k\u00f6vetett, ahol sz\u00e1mos d\u00edjat nyert \u00e9s Eur\u00f3pai Filmd\u00edjra jel\u00f6lt\u00e9k. A Magyar Filmkritikusok a legjobb dokumentumfilmnek j\u00e1r\u00f3 d\u00edjjal ismert\u00e9k el.",
+         "age_limit":[  
+            "12",
+            "Tizenk\u00e9t \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2017,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":89,
+         "raw_genres":[  
+            "Documentary"
+         ],
+         "genre":[  
+            "dokumentum"
+         ],
+         "genres":"dokumentumfilm",
+         "genres_nosub":"dokumentumfilm",
+         "country":[  
+            "HU"
+         ],
+         "countries":"magyar",
+         "distributor":"ELF Pictures",
+         "colors":[  
+            [  
+               "41",
+               "36",
+               "39"
+            ],
+            [  
+               "225",
+               "215",
+               "199"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/f7\/f7297f0200688cdc22a80685eabf922e.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2191-egy-no-fogsagban.38203.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.78000000000000003,
+         "norm_rating":80,
+         "norm_rating_5":4,
+         "imdb_rating":"7.8",
+         "lists":[  
+
+         ],
+         "requested":1557274360,
+         "created_at":"2019-03-05",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2141,
+         "slug":"2141-ferenc-papa-egy-hiteles-ember",
+         "hu_title":"Ferenc p\u00e1pa - Egy hiteles ember",
+         "title":"Pope Francis: A Man of his Word",
+         "original_title":"Pope Francis: A Man of his Word",
+         "plot":"Pope Francis travels the world speaking to those in need and delivering a message of hope.",
+         "hu_plot":"A h\u00e1rom Oscar-d\u00edjra jel\u00f6lt Wim Wenders (P\u00e1rizs, Texas, Berlin felett az \u00e9g, Buena Vista Social Club, Az \u00e9let s\u00f3ja) filmj\u00e9ben Ferenc p\u00e1pa utaz\u00e1saiba \u00e9s vall\u00e1ssal kapcsolatos n\u00e9zeteibe nyerhet\u00fcnk betekint\u00e9st, mik\u00f6zben az egyh\u00e1zf\u0151 olyan \u00e1ltal\u00e1nos t\u00e9m\u00e1kkal kapcsolatban felmer\u00fcl\u0151 k\u00e9rd\u00e9sekre ad \u0151szinte, komoly, olykor humorral f\u0171szerezett v\u00e1laszokat, mint a hal\u00e1l, a t\u00e1rsadalmi \u00e9s gazdas\u00e1gi egyenl\u0151tlens\u00e9gek, a bev\u00e1ndorl\u00e1s, az \u00f6kol\u00f3gia, valamint a csal\u00e1d szerepe. A Ferenc p\u00e1pa \u2013 Egy hiteles ember azon ritka alkot\u00e1sok egyike, amelyek a Vatik\u00e1nnal szoros egy\u00fcttm\u0171k\u00f6d\u00e9sben k\u00e9sz\u00fcltek. A rendez\u0151 p\u00e9ld\u00e1tlan betekint\u00e9st nyert a p\u00e1pa \u00e9let\u00e9be: t\u00f6bb mint k\u00e9t \u00e9ven kereszt\u00fcl k\u00eds\u00e9rte, emellett a vatik\u00e1ni t\u00e9v\u00e9arch\u00edvum olyan exkluz\u00edv felv\u00e9teleket is a rendelkez\u00e9s\u00e9re bocs\u00e1tott, amelyek Ferenc p\u00e1pa vil\u00e1g k\u00f6r\u00fcli utaz\u00e1sai sor\u00e1n k\u00e9sz\u00fcltek. A filmben haszn\u00e1lt vizu\u00e1lis st\u00edlusnak k\u00f6sz\u00f6nhet\u0151en a n\u00e9z\u0151k eg\u00e9szen k\u00f6zel ker\u00fclhetnek a p\u00e1p\u00e1hoz, aki szem\u00e9lyesen is megsz\u00f3l\u00edtja a k\u00f6z\u00f6ns\u00e9get.",
+         "plot_stripped":"Pope Francis travels the world speaking to those in need and delivering a message of hope.",
+         "hu_plot_stripped":"A h\u00e1rom Oscar-d\u00edjra jel\u00f6lt Wim Wenders (P\u00e1rizs, Texas, Berlin felett az \u00e9g, Buena Vista Social Club, Az \u00e9let s\u00f3ja) filmj\u00e9ben Ferenc p\u00e1pa utaz\u00e1saiba \u00e9s vall\u00e1ssal kapcsolatos n\u00e9zeteibe nyerhet\u00fcnk betekint\u00e9st, mik\u00f6zben az egyh\u00e1zf\u0151 olyan \u00e1ltal\u00e1nos t\u00e9m\u00e1kkal kapcsolatban felmer\u00fcl\u0151 k\u00e9rd\u00e9sekre ad \u0151szinte, komoly, olykor humorral f\u0171szerezett v\u00e1laszokat, mint a hal\u00e1l, a t\u00e1rsadalmi \u00e9s gazdas\u00e1gi egyenl\u0151tlens\u00e9gek, a bev\u00e1ndorl\u00e1s, az \u00f6kol\u00f3gia, valamint a csal\u00e1d szerepe. A Ferenc p\u00e1pa \u2013 Egy hiteles ember azon ritka alkot\u00e1sok egyike, amelyek a Vatik\u00e1nnal szoros egy\u00fcttm\u0171k\u00f6d\u00e9sben k\u00e9sz\u00fcltek. A rendez\u0151 p\u00e9ld\u00e1tlan betekint\u00e9st nyert a p\u00e1pa \u00e9let\u00e9be: t\u00f6bb mint k\u00e9t \u00e9ven kereszt\u00fcl k\u00eds\u00e9rte, emellett a vatik\u00e1ni t\u00e9v\u00e9arch\u00edvum olyan exkluz\u00edv felv\u00e9teleket is a rendelkez\u00e9s\u00e9re bocs\u00e1tott, amelyek Ferenc p\u00e1pa vil\u00e1g k\u00f6r\u00fcli utaz\u00e1sai sor\u00e1n k\u00e9sz\u00fcltek. A filmben haszn\u00e1lt vizu\u00e1lis st\u00edlusnak k\u00f6sz\u00f6nhet\u0151en a n\u00e9z\u0151k eg\u00e9szen k\u00f6zel ker\u00fclhetnek a p\u00e1p\u00e1hoz, aki szem\u00e9lyesen is megsz\u00f3l\u00edtja a k\u00f6z\u00f6ns\u00e9get.",
+         "age_limit":[  
+            "12",
+            "Tizenk\u00e9t \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2018,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":96,
+         "raw_genres":[  
+            "Biography",
+            "Documentary"
+         ],
+         "genre":[  
+            "\u00e9letrajzi",
+            "dokumentum"
+         ],
+         "genres":"\u00e9letrajzi dokumentumfilm",
+         "genres_nosub":"\u00e9letrajzi dokumentumfilm",
+         "country":[  
+            "CH",
+            "US",
+            "IT",
+            "DE",
+            "FR"
+         ],
+         "countries":"sv\u00e1jci-amerikai-olasz-n\u00e9met-francia",
+         "distributor":"Pannonia Entertainment Ltd.",
+         "colors":[  
+            [  
+               "226",
+               "230",
+               "207"
+            ],
+            [  
+               "41",
+               "39",
+               "37"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/41\/41bdfec5ef579162f06b10d6e91e0400.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2141-ferenc-papa-egy-hiteles-ember.38083.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.57999999999999996,
+         "norm_rating":60,
+         "norm_rating_5":3,
+         "imdb_rating":"5.8",
+         "lists":[  
+
+         ],
+         "requested":1557274266,
+         "created_at":"2019-02-02",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2162,
+         "slug":"2162-hotel-mumbai",
+         "hu_title":"Hotel Mumbai",
+         "title":"Hotel Mumbai",
+         "original_title":"Hotel Mumbai",
+         "plot":"Hotel Mumbai tells the astonishing true story of the victims and survivors of the devastating attacks on Mumbai in 2008. A story which fearlessly tackles the defining global issues of our time. A story about ordinary people. Real people. People of all races, all colours, all creeds, binding together in a gruelling fight for survival. A story that celebrates humanity\u0027s highest ideals - compassion, courage, resilience and an unwavering desire to live.",
+         "hu_plot":"T\u00edz elsz\u00e1nt terrorista k\u00f6t ki Mumbai partjain\u00e1l egy motorcs\u00f3nakkal. C\u00e9ljuk t\u00f6bb helysz\u00ednen mer\u00e9nylet elk\u00f6vet\u00e9se a hatalmas indiai metropoliszban, amelyekkel a lehet\u0151 legt\u00f6bb \u00e1ldozatot akarj\u00e1k szedni. Utols\u00f3 c\u00e9lpontjukk\u00e9nt benyomulnak a vil\u00e1gh\u00edr\u0171 Taj Hotel luxussz\u00e1llod\u00e1ba. Am\u00edg a kommand\u00f3sok meg\u00e9rkeznek, a hotelben egy \u00f6r\u00f6kk\u00e9val\u00f3s\u00e1gnak t\u0171n\u0151 macska-eg\u00e9r j\u00e1tszma kezd\u0151dik a fegyveresek, valamint az \u00e1rtatlan turist\u00e1k \u00e9s alkalmazottak k\u00f6z\u00f6tt. A hotel alkalmazottjai k\u00f6z\u00fcl n\u00e9h\u00e1nyan a menek\u00fcl\u00e9s helyett ink\u00e1bb a marad\u00e1s mellett d\u00f6ntenek, s \u00e9let\u00fck kock\u00e1ztat\u00e1s\u00e1val igyekeznek v\u00e9deni a turist\u00e1kat.\r\n\r\nA Hotel Mumbai megt\u00f6rt\u00e9nt esem\u00e9nyeken alapul. A 2008-as Mumbai terrormer\u00e9nyletek sor\u00e1n n\u00e9gy nap alatt 10 iszlamista terrorista 12 szervezett robbant\u00e1st \u00e9s l\u00f6v\u00f6ld\u00f6z\u00e9st hajtott v\u00e9gre v\u00e1rosszerte. A november 26-a \u00e9s 29-e k\u00f6z\u00f6tt tart\u00f3 mer\u00e9nyletekben legkevesebb 174 ember halt meg, k\u00f6zt\u00fck kilenc terrorista, t\u00f6bb mint 300 ember pedig megsebes\u00fclt. Anthony Maras az esem\u00e9nyek alapj\u00e1n, az \u00e1ldozatok eml\u00e9k\u00e9nek tiszteletben tart\u00e1sa mellett k\u00e9sz\u00edtett a Taj Hotel-beli esem\u00e9nyekr\u0151l filmet. Az alkot\u00e1s vil\u00e1gpremierje a vil\u00e1g egyik legrangosabb filmfesztiv\u00e1lj\u00e1n, a Toront\u00f3i Nemzetk\u00f6zi Filmfesztiv\u00e1lon volt, majd bej\u00e1rta a vil\u00e1g filmfesztiv\u00e1ljait. A film egyik producere, egyben f\u0151szerepl\u0151je a Gett\u00f3milliomos \u00e9s Oroszl\u00e1n r\u00e9v\u00e9n vil\u00e1gh\u00edr\u0171, Oscar-d\u00edjra jel\u00f6lt brit sz\u00edn\u00e9sz, Dev Patel (H\u00edrad\u00f3sok, Keleti nyugalom \u2013 Marigold Hotel, Chappie, Az utols\u00f3 l\u00e9ghajl\u00edt\u00f3). Mellette felt\u0171nik a filmben t\u00f6bbek k\u00f6z\u00f6tt a Golden Globe-d\u00edjra jel\u00f6lt Armie Hammer (Sz\u00f3l\u00edts a neveden, \u00c9jszakai ragadoz\u00f3k, Az U.N.C.L.E. embere, A mag\u00e1nyos lovas) \u00e9s Jason Isaacs (A hazafi, Harry Potter \u00e9s a titkok kamr\u00e1ja, P\u00e1n P\u00e9ter, Szt\u00e1lin hal\u00e1la, A s\u00f3lyom v\u00e9gvesz\u00e9lyben) is.",
+         "plot_stripped":"Hotel Mumbai tells the astonishing true story of the victims and survivors of the devastating attacks on Mumbai in 2008. A story which fearlessly tackles the defining global issues of our time. A story about ordinary people. Real people. People of all races, all colours, all creeds, binding together in a gruelling fight for survival. A story that celebrates humanity\u0027s highest ideals - compassion, courage, resilience and an unwavering desire to live.",
+         "hu_plot_stripped":"T\u00edz elsz\u00e1nt terrorista k\u00f6t ki Mumbai partjain\u00e1l egy motorcs\u00f3nakkal. C\u00e9ljuk t\u00f6bb helysz\u00ednen mer\u00e9nylet elk\u00f6vet\u00e9se a hatalmas indiai metropoliszban, amelyekkel a lehet\u0151 legt\u00f6bb \u00e1ldozatot akarj\u00e1k szedni. Utols\u00f3 c\u00e9lpontjukk\u00e9nt benyomulnak a vil\u00e1gh\u00edr\u0171 Taj Hotel luxussz\u00e1llod\u00e1ba. Am\u00edg a kommand\u00f3sok meg\u00e9rkeznek, a hotelben egy \u00f6r\u00f6kk\u00e9val\u00f3s\u00e1gnak t\u0171n\u0151 macska-eg\u00e9r j\u00e1tszma kezd\u0151dik a fegyveresek, valamint az \u00e1rtatlan turist\u00e1k \u00e9s alkalmazottak k\u00f6z\u00f6tt. A hotel alkalmazottjai k\u00f6z\u00fcl n\u00e9h\u00e1nyan a menek\u00fcl\u00e9s helyett ink\u00e1bb a marad\u00e1s mellett d\u00f6ntenek, s \u00e9let\u00fck kock\u00e1ztat\u00e1s\u00e1val igyekeznek v\u00e9deni a turist\u00e1kat.\r\n\r\nA Hotel Mumbai megt\u00f6rt\u00e9nt esem\u00e9nyeken alapul. A 2008-as Mumbai terrormer\u00e9nyletek sor\u00e1n n\u00e9gy nap alatt 10 iszlamista terrorista 12 szervezett robbant\u00e1st \u00e9s l\u00f6v\u00f6ld\u00f6z\u00e9st hajtott v\u00e9gre v\u00e1rosszerte. A november 26-a \u00e9s 29-e k\u00f6z\u00f6tt tart\u00f3 mer\u00e9nyletekben legkevesebb 174 ember halt meg, k\u00f6zt\u00fck kilenc terrorista, t\u00f6bb mint 300 ember pedig megsebes\u00fclt. Anthony Maras az esem\u00e9nyek alapj\u00e1n, az \u00e1ldozatok eml\u00e9k\u00e9nek tiszteletben tart\u00e1sa mellett k\u00e9sz\u00edtett a Taj Hotel-beli esem\u00e9nyekr\u0151l filmet. Az alkot\u00e1s vil\u00e1gpremierje a vil\u00e1g egyik legrangosabb filmfesztiv\u00e1lj\u00e1n, a Toront\u00f3i Nemzetk\u00f6zi Filmfesztiv\u00e1lon volt, majd bej\u00e1rta a vil\u00e1g filmfesztiv\u00e1ljait. A film egyik producere, egyben f\u0151szerepl\u0151je a Gett\u00f3milliomos \u00e9s Oroszl\u00e1n r\u00e9v\u00e9n vil\u00e1gh\u00edr\u0171, Oscar-d\u00edjra jel\u00f6lt brit sz\u00edn\u00e9sz, Dev Patel (H\u00edrad\u00f3sok, Keleti nyugalom \u2013 Marigold Hotel, Chappie, Az utols\u00f3 l\u00e9ghajl\u00edt\u00f3). Mellette felt\u0171nik a filmben t\u00f6bbek k\u00f6z\u00f6tt a Golden Globe-d\u00edjra jel\u00f6lt Armie Hammer (Sz\u00f3l\u00edts a neveden, \u00c9jszakai ragadoz\u00f3k, Az U.N.C.L.E. embere, A mag\u00e1nyos lovas) \u00e9s Jason Isaacs (A hazafi, Harry Potter \u00e9s a titkok kamr\u00e1ja, P\u00e1n P\u00e9ter, Szt\u00e1lin hal\u00e1la, A s\u00f3lyom v\u00e9gvesz\u00e9lyben) is.",
+         "age_limit":[  
+            "16",
+            "Tizenhat \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2018,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":125,
+         "raw_genres":[  
+            "Action",
+            "Drama",
+            "History",
+            "Thriller"
+         ],
+         "genre":[  
+            "akci\u00f3",
+            "dr\u00e1ma",
+            "t\u00f6rt\u00e9nelmi",
+            "thriller"
+         ],
+         "genres":"feliratos t\u00f6rt\u00e9nelmi akci\u00f3-dr\u00e1ma thriller",
+         "genres_nosub":"t\u00f6rt\u00e9nelmi akci\u00f3-dr\u00e1ma thriller",
+         "country":[  
+            "AU",
+            "US",
+            "IN"
+         ],
+         "countries":"ausztr\u00e1liai-amerikai-indiai",
+         "distributor":"Vertigo M\u00e9dia Kft.",
+         "colors":[  
+            [  
+               "71",
+               "39",
+               "38"
+            ],
+            [  
+               "233",
+               "173",
+               "74"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/58\/58a8c28b0dc0a9b513e83bc7311ab088.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2162-hotel-mumbai.38022.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.78000000000000003,
+         "norm_rating":80,
+         "norm_rating_5":4,
+         "imdb_rating":"7.8",
+         "lists":[  
+
+         ],
+         "requested":1557274310,
+         "created_at":"2019-02-15",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2118,
+         "slug":"2118-interju-istennel",
+         "hu_title":"Interj\u00fa Istennel",
+         "title":"An Interview with God",
+         "original_title":"An Interview with God",
+         "plot":"Paul Asher, an up-and-coming journalist, returns home from covering the war in Afghanistan and finds his life is falling apart. His marriage is failing and he\u0027s in the grips of a personal crisis he doesn\u0027t yet understand. Even more pressing, a solider that Paul befriended in Afghanistan is struggling at home and Paul is desperately trying to help him. But, Paul\u0027s work life takes a strange twist when he\u0027s offered an interview that he finds impossible to resist - an interview with someone who claims to be God.",
+         "hu_plot":"Paul Asher afganiszt\u00e1ni tud\u00f3s\u00edt\u00e1sai karrierj\u00e9nek legkellend\u0151bb munk\u00e1i. Miut\u00e1n hazat\u00e9r a K\u00f6zel-Keletr\u0151l, a fiatal \u00fajs\u00e1g\u00edr\u00f3 nehezen dolgozza fel a h\u00e1bor\u00faban l\u00e1tott borzalmakat \u00e9s mikor h\u00e1zass\u00e1ga is v\u00e1ls\u00e1gba ker\u00fcl, teljesen elveszettnek \u00e9rzi mag\u00e1t. Egy napon azt\u00e1n k\u00fcl\u00f6n\u00f6s interj\u00faalannyal hozza \u00f6ssze az \u00e9let, egy f\u00e9rfival, aki azt \u00e1ll\u00edtja mag\u00e1r\u00f3l, hogy \u0150 Isten. Paul kezdetben szkeptikusan fogadja a titokzatos idegen szavait, \u00e1m min\u00e9l t\u00f6bbet besz\u00e9lgetnek, ann\u00e1l ink\u00e1bb az az \u00e9rz\u00e9se, hogy tal\u00e1n a f\u00e9rfi t\u00e9nyleg igazat mond. Vajon mit k\u00e9rdezhet egy k\u00edv\u00e1ncsi \u00fajs\u00e1g\u00edr\u00f3 a Teremt\u0151t\u0151l? \u00c9s Te mit k\u00e9rdezn\u00e9l T\u0151le?",
+         "plot_stripped":"Paul Asher, an up-and-coming journalist, returns home from covering the war in Afghanistan and finds his life is falling apart. His marriage is failing and he\u0027s in the grips of a personal crisis he doesn\u0027t yet understand. Even more pressing, a solider that Paul befriended in Afghanistan is struggling at home and Paul is desperately trying to help him. But, Paul\u0027s work life takes a strange twist when he\u0027s offered an interview that he finds impossible to resist - an interview with someone who claims to be God.",
+         "hu_plot_stripped":"Paul Asher afganiszt\u00e1ni tud\u00f3s\u00edt\u00e1sai karrierj\u00e9nek legkellend\u0151bb munk\u00e1i. Miut\u00e1n hazat\u00e9r a K\u00f6zel-Keletr\u0151l, a fiatal \u00fajs\u00e1g\u00edr\u00f3 nehezen dolgozza fel a h\u00e1bor\u00faban l\u00e1tott borzalmakat \u00e9s mikor h\u00e1zass\u00e1ga is v\u00e1ls\u00e1gba ker\u00fcl, teljesen elveszettnek \u00e9rzi mag\u00e1t. Egy napon azt\u00e1n k\u00fcl\u00f6n\u00f6s interj\u00faalannyal hozza \u00f6ssze az \u00e9let, egy f\u00e9rfival, aki azt \u00e1ll\u00edtja mag\u00e1r\u00f3l, hogy \u0150 Isten. Paul kezdetben szkeptikusan fogadja a titokzatos idegen szavait, \u00e1m min\u00e9l t\u00f6bbet besz\u00e9lgetnek, ann\u00e1l ink\u00e1bb az az \u00e9rz\u00e9se, hogy tal\u00e1n a f\u00e9rfi t\u00e9nyleg igazat mond. Vajon mit k\u00e9rdezhet egy k\u00edv\u00e1ncsi \u00fajs\u00e1g\u00edr\u00f3 a Teremt\u0151t\u0151l? \u00c9s Te mit k\u00e9rdezn\u00e9l T\u0151le?",
+         "age_limit":[  
+            "12",
+            "Tizenk\u00e9t \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2018,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":97,
+         "raw_genres":[  
+            "Drama",
+            "Mystery"
+         ],
+         "genre":[  
+            "dr\u00e1ma",
+            "misztikus"
+         ],
+         "genres":"feliratos misztikus dr\u00e1ma",
+         "genres_nosub":"misztikus dr\u00e1ma",
+         "country":[  
+            "US"
+         ],
+         "countries":"amerikai",
+         "distributor":"ADS Service Kft.",
+         "colors":[  
+            [  
+               "82",
+               "81",
+               "82"
+            ],
+            [  
+               "207",
+               "214",
+               "212"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/8a\/8a221e1f7a99c8263b31e0dd611873f2.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2118-interju-istennel.37619.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.57999999999999996,
+         "norm_rating":60,
+         "norm_rating_5":3,
+         "imdb_rating":"5.8",
+         "lists":[  
+
+         ],
+         "requested":1557274250,
+         "created_at":"2019-01-25",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2052,
+         "slug":"2052-latomas",
+         "hu_title":"L\u00e1tom\u00e1s",
+         "title":"Vision",
+         "original_title":"\u30d3\u30b8\u30e7\u30f3 (Vision)",
+         "plot":"Frenchwoman Joan is a world traveller and chronicler. She travels, sees, experience and writes. She lands in the forest and hills near Nara, Japan and meets Satoshi. Despite the mysterious aura and eccentric personality the woodsman finds a place in the visitor\u0027s heart.",
+         "hu_plot":"A francia \u00edr\u00f3n\u0151, Jeanne Jap\u00e1nba utazik, hogy felkutasson egy ritka, legend\u00e1s gy\u00f3gyn\u00f6v\u00e9nyt. \u00datja a gy\u00f6ny\u00f6r\u0171 narai erd\u0151be vezeti, amely az orsz\u00e1g egyik leg\u0151sibb, legs\u0171r\u0171bb rengetege. Itt ismeri meg Tom\u00f3t, a k\u00fcl\u00f6n\u00f6s, komor erd\u00e9szt, aki h\u0171s\u00e9ges k\u00eds\u00e9r\u0151j\u00e9\u00fcl szeg\u0151dik. A titokzatos t\u00e1jakon Jeanne \u00fajra \u00e1t\u00e9li els\u0151 nagy szerelm\u00e9nek eml\u00e9keit\u2026\r\n\r\nA San Sebastian-i filmfesztiv\u00e1lon mutatkozott be Juliette Binoche f\u0151szerepl\u00e9s\u00e9vel.",
+         "plot_stripped":"Frenchwoman Joan is a world traveller and chronicler. She travels, sees, experience and writes. She lands in the forest and hills near Nara, Japan and meets Satoshi. Despite the mysterious aura and eccentric personality the woodsman finds a place in the visitor\u0027s heart.",
+         "hu_plot_stripped":"A francia \u00edr\u00f3n\u0151, Jeanne Jap\u00e1nba utazik, hogy felkutasson egy ritka, legend\u00e1s gy\u00f3gyn\u00f6v\u00e9nyt. \u00datja a gy\u00f6ny\u00f6r\u0171 narai erd\u0151be vezeti, amely az orsz\u00e1g egyik leg\u0151sibb, legs\u0171r\u0171bb rengetege. Itt ismeri meg Tom\u00f3t, a k\u00fcl\u00f6n\u00f6s, komor erd\u00e9szt, aki h\u0171s\u00e9ges k\u00eds\u00e9r\u0151j\u00e9\u00fcl szeg\u0151dik. A titokzatos t\u00e1jakon Jeanne \u00fajra \u00e1t\u00e9li els\u0151 nagy szerelm\u00e9nek eml\u00e9keit\u2026\r\n\r\nA San Sebastian-i filmfesztiv\u00e1lon mutatkozott be Juliette Binoche f\u0151szerepl\u00e9s\u00e9vel.",
+         "age_limit":[  
+            "12",
+            "Tizenk\u00e9t \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2018,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":109,
+         "raw_genres":[  
+            "Drama"
+         ],
+         "genre":[  
+            "dr\u00e1ma"
+         ],
+         "genres":"dr\u00e1ma",
+         "genres_nosub":"dr\u00e1ma",
+         "country":[  
+            "FR",
+            "JP"
+         ],
+         "countries":"francia-jap\u00e1n",
+         "distributor":"Cirko Film",
+         "colors":[  
+            [  
+               "121",
+               "174",
+               "181"
+            ],
+            [  
+               "15",
+               "33",
+               "21"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/c9\/c97c7f433136b49c5b872a8fb92a750d.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2052-latomas.39378.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.54000000000000004,
+         "norm_rating":60,
+         "norm_rating_5":3,
+         "imdb_rating":"5.4",
+         "lists":[  
+
+         ],
+         "requested":1557274209,
+         "created_at":"2018-12-14",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":1681,
+         "slug":"1681-mia-es-a-feher-oroszlan",
+         "hu_title":"Mia \u00e9s a feh\u00e9r oroszl\u00e1n",
+         "title":"Mia and the White Lion",
+         "original_title":"Mia et le lion blanc",
+         "plot":"A young girl from London moves to Africa with her parents where she befriends a lion cub.",
+         "hu_plot":"A t\u00edz\u00e9ves Mia \u00e9lete fenekest\u00fcl felfordul, miut\u00e1n a csal\u00e1dja \u00fagy d\u00f6nt, elhagyj\u00e1k Londont, \u00e9s egy oroszl\u00e1nfarmon kezdenek dolgozni Afrik\u00e1ban. Amikor megsz\u00fcletik Charlie, a gy\u00f6ny\u00f6r\u0171 feh\u00e9r oroszl\u00e1n, a kisl\u00e1ny \u00fajra r\u00e1tal\u00e1l a boldogs\u00e1gra, \u00e9s k\u00fcl\u00f6nleges bar\u00e1ts\u00e1got k\u00f6t az \u00e1llatk\u00f6ly\u00f6kkel. Miut\u00e1n azonban Charlie bet\u00f6lti harmadik \u00e9v\u00e9t, Mia \u00e9lete \u00fajra a feje tetej\u00e9re \u00e1ll, a kisl\u00e1ny ugyanis r\u00e1bukkan a nyugtalan\u00edt\u00f3 titokra, amelyet az \u00e9desapja megpr\u00f3b\u00e1lt elrejteni el\u0151le. Mi\u00e1t a hatalm\u00e1ba ker\u00edti a f\u00e9lelem, hogy Charlie-nak baja eshet, ez\u00e9rt ink\u00e1bb megsz\u00f6kik vele. A k\u00e9t bar\u00e1t hihetetlen kalandra indul a d\u00e9l-afrikai szavann\u00e1n, hogy tal\u00e1ljanak egy helyet, ahol az oroszl\u00e1n szabadon \u00e9lheti az \u00e9let\u00e9t.",
+         "plot_stripped":"A young girl from London moves to Africa with her parents where she befriends a lion cub.",
+         "hu_plot_stripped":"A t\u00edz\u00e9ves Mia \u00e9lete fenekest\u00fcl felfordul, miut\u00e1n a csal\u00e1dja \u00fagy d\u00f6nt, elhagyj\u00e1k Londont, \u00e9s egy oroszl\u00e1nfarmon kezdenek dolgozni Afrik\u00e1ban. Amikor megsz\u00fcletik Charlie, a gy\u00f6ny\u00f6r\u0171 feh\u00e9r oroszl\u00e1n, a kisl\u00e1ny \u00fajra r\u00e1tal\u00e1l a boldogs\u00e1gra, \u00e9s k\u00fcl\u00f6nleges bar\u00e1ts\u00e1got k\u00f6t az \u00e1llatk\u00f6ly\u00f6kkel. Miut\u00e1n azonban Charlie bet\u00f6lti harmadik \u00e9v\u00e9t, Mia \u00e9lete \u00fajra a feje tetej\u00e9re \u00e1ll, a kisl\u00e1ny ugyanis r\u00e1bukkan a nyugtalan\u00edt\u00f3 titokra, amelyet az \u00e9desapja megpr\u00f3b\u00e1lt elrejteni el\u0151le. Mi\u00e1t a hatalm\u00e1ba ker\u00edti a f\u00e9lelem, hogy Charlie-nak baja eshet, ez\u00e9rt ink\u00e1bb megsz\u00f6kik vele. A k\u00e9t bar\u00e1t hihetetlen kalandra indul a d\u00e9l-afrikai szavann\u00e1n, hogy tal\u00e1ljanak egy helyet, ahol az oroszl\u00e1n szabadon \u00e9lheti az \u00e9let\u00e9t.",
+         "age_limit":[  
+            "12",
+            "Tizenk\u00e9t \u00e9ven aluliak sz\u00e1m\u00e1ra nem aj\u00e1nlott"
+         ],
+         "year":2018,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":98,
+         "raw_genres":[  
+            "Adventure",
+            "Drama",
+            "Family"
+         ],
+         "genre":[  
+            "kaland",
+            "dr\u00e1ma",
+            "csal\u00e1di"
+         ],
+         "genres":"csal\u00e1di kaland-dr\u00e1ma",
+         "genres_nosub":"csal\u00e1di kaland-dr\u00e1ma",
+         "country":[  
+            "FR",
+            "DE",
+            "ZA"
+         ],
+         "countries":"francia-n\u00e9met-d\u00e9l-afrikai",
+         "distributor":"Big Bang Media",
+         "colors":[  
+            [  
+               "83",
+               "98",
+               "127"
+            ],
+            [  
+               "156",
+               "97",
+               "37"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/f2\/f2194c5f2e928f123588f7e75911c1b4.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/1681-mia-es-a-feher-oroszlan.38495.thumb.jpg",
+         "poster_blur":null,
+         "rating":0.66000000000000003,
+         "norm_rating":70,
+         "norm_rating_5":3.5,
+         "imdb_rating":"6.6",
+         "lists":[  
+
+         ],
+         "requested":1557273855,
+         "created_at":"2018-03-15",
+         "__generated":"2019-05-08 02:15:41"
+      },
+      {  
+         "id":2155,
+         "slug":"2155-vizipok-csodapok-a-film",
+         "hu_title":"V\u00edzip\u00f3k-csodap\u00f3k - a film",
+         "title":"Vizip\u00f3k-csodap\u00f3k - a film",
+         "original_title":"Vizip\u00f3k-csodap\u00f3k - a film",
+         "plot":"",
+         "hu_plot":"Gyermekkorunk h\u0151sei, a V\u00edzip\u00f3k \u00e9s kedves bar\u00e1tja a Keresztesp\u00f3k nagy mes\u00e9je digit\u00e1lisan fel\u00faj\u00edtva \u00fajra megtekinthet\u0151 a magyar mozik m\u0171sor\u00e1n \u00e1prilis 18-t\u00f3l!\r\n\r\nBek\u00f6sz\u00f6nt a tavasz, a kishangy\u00e1k egy kiflics\u00fccs\u00f6k morzs\u00e1val szaladg\u00e1lnak a f\u00fcv\u00f6n. Katica tan\u00e1cs\u00e1ra a csigah\u00e1z fel\u00e9 igyekeznek. Odabent nem csiga lakik, hanem a V\u00edzip\u00f3k, aki \u00faszk\u00e1lni akar a t\u00f3ban a szabad \u00e9g alatt. Ekkor tal\u00e1lkoznak Keresztesp\u00f3kkal, aki kifog\u00e1solja, hogy egy rendes p\u00f3k az nem \u00faszk\u00e1lhat a v\u00edzben. V\u00edzip\u00f3k ezen kicsit m\u00e9rgel\u0151dik, a kishangy\u00e1k pr\u00f3b\u00e1lj\u00e1k meggy\u0151zni a Keresztesp\u00f3kot, hogy a V\u00edzip\u00f3k szerint\u00fck nagyon rendes p\u00f3knak t\u0171nik...\r\n\r\nAz 1974-es \u00e9s 1980-as \u00e9vad r\u00e9szeib\u0151l v\u00e1logatta \u00f6ssze \u00e9s rajzolta mesefilm\u00e9 Mikul\u00e1s Ferenc csapata gyermekkorunk nagy kedvenc\u00e9t 1983-ban, \u00e9s a digit\u00e1lisan fel\u00faj\u00edtott v\u00e1ltozattal k\u00e9sz\u00fcl\u00fcnk \u00e1prilis 18-\u00e1n \u00f6r\u00f6met okozni minden \u00f3vod\u00e1snak, kisiskol\u00e1snak \u00e9s a sz\u00fcleiknek.",
+         "plot_stripped":"",
+         "hu_plot_stripped":"Gyermekkorunk h\u0151sei, a V\u00edzip\u00f3k \u00e9s kedves bar\u00e1tja a Keresztesp\u00f3k nagy mes\u00e9je digit\u00e1lisan fel\u00faj\u00edtva \u00fajra megtekinthet\u0151 a magyar mozik m\u0171sor\u00e1n \u00e1prilis 18-t\u00f3l!\r\n\r\nBek\u00f6sz\u00f6nt a tavasz, a kishangy\u00e1k egy kiflics\u00fccs\u00f6k morzs\u00e1val szaladg\u00e1lnak a f\u00fcv\u00f6n. Katica tan\u00e1cs\u00e1ra a csigah\u00e1z fel\u00e9 igyekeznek. Odabent nem csiga lakik, hanem a V\u00edzip\u00f3k, aki \u00faszk\u00e1lni akar a t\u00f3ban a szabad \u00e9g alatt. Ekkor tal\u00e1lkoznak Keresztesp\u00f3kkal, aki kifog\u00e1solja, hogy egy rendes p\u00f3k az nem \u00faszk\u00e1lhat a v\u00edzben. V\u00edzip\u00f3k ezen kicsit m\u00e9rgel\u0151dik, a kishangy\u00e1k pr\u00f3b\u00e1lj\u00e1k meggy\u0151zni a Keresztesp\u00f3kot, hogy a V\u00edzip\u00f3k szerint\u00fck nagyon rendes p\u00f3knak t\u0171nik...\r\n\r\nAz 1974-es \u00e9s 1980-as \u00e9vad r\u00e9szeib\u0151l v\u00e1logatta \u00f6ssze \u00e9s rajzolta mesefilm\u00e9 Mikul\u00e1s Ferenc csapata gyermekkorunk nagy kedvenc\u00e9t 1983-ban, \u00e9s a digit\u00e1lisan fel\u00faj\u00edtott v\u00e1ltozattal k\u00e9sz\u00fcl\u00fcnk \u00e1prilis 18-\u00e1n \u00f6r\u00f6met okozni minden \u00f3vod\u00e1snak, kisiskol\u00e1snak \u00e9s a sz\u00fcleiknek.",
+         "age_limit":[  
+            "0",
+            "Korhat\u00e1r n\u00e9lk\u00fcl megtekinthet\u0151"
+         ],
+         "year":2019,
+         "hu_release":"2019-04-18",
+         "hu_release_week":[  
+            "2019\/16",
+            "2019-04-15",
+            "2019-04-21"
+         ],
+         "hu_release_nice":"2019. \u00e1prilis 18.",
+         "skip":0,
+         "runtime":79,
+         "raw_genres":[  
+            "Animation",
+            "Family"
+         ],
+         "genre":[  
+            "anim\u00e1ci\u00f3s",
+            "csal\u00e1di"
+         ],
+         "genres":"anim\u00e1ci\u00f3s csal\u00e1di film",
+         "genres_nosub":"anim\u00e1ci\u00f3s csal\u00e1di film",
+         "country":[  
+            "HU"
+         ],
+         "countries":"magyar",
+         "distributor":"Mozinet",
+         "colors":[  
+            [  
+               "108",
+               "192",
+               "195"
+            ],
+            [  
+               "36",
+               "71",
+               "77"
+            ]
+         ],
+         "background":"https:\/\/static.mozipremierek.hu\/media\/68\/680eeb655e52b41ca8b0af7e534c35d5.jpg",
+         "has_trailer":true,
+         "poster_thumb":"https:\/\/static.mozipremierek.hu\/poster\/2155-vizipok-csodapok-a-film.39411.thumb.jpg",
+         "poster_blur":null,
+         "rating":null,
+         "norm_rating":null,
+         "norm_rating_5":null,
+         "imdb_rating":null,
+         "lists":[  
+
+         ],
+         "requested":0,
+         "created_at":"2019-02-08",
+         "__generated":"2019-05-08 02:15:41"
+      }
+   ],
+   "countdown":21,
+   "director":{  
+      "nm2285536":{  
+         "id":"31702",
+         "person_id":"18624",
+         "name":"Anthony Maras",
+         "last_name":"Maras",
+         "imdb_id":"nm2285536",
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "writer":{  
+      "31703":{  
+         "id":"31703",
+         "person_id":"2957",
+         "name":"John Collee",
+         "last_name":"Collee",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "nm2285536":{  
+         "id":"31704",
+         "person_id":"18624",
+         "name":"Anthony Maras",
+         "last_name":"Maras",
+         "imdb_id":"nm2285536",
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "actors":[  
+      {  
+         "id":"31701",
+         "person_id":"18623",
+         "name":"Dinesh Kumar",
+         "last_name":"Kumar",
+         "imdb_id":"nm8574169",
+         "counter":1,
+         "note":"Rashid",
+         "skip":false,
+         "star":"1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31698",
+         "person_id":"18621",
+         "name":"Manoj Mehra",
+         "last_name":"Mehra",
+         "imdb_id":"nm9052961",
+         "counter":1,
+         "note":"Houssam",
+         "skip":false,
+         "star":"1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31697",
+         "person_id":"18620",
+         "name":"Suhail Nayyar",
+         "last_name":"Nayyar",
+         "imdb_id":"nm8237562",
+         "counter":1,
+         "note":"Abdullah",
+         "skip":false,
+         "star":"1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31696",
+         "person_id":"18619",
+         "name":"Amandeep Singh",
+         "last_name":"Singh",
+         "imdb_id":"nm9008193",
+         "counter":1,
+         "note":"Imran",
+         "skip":false,
+         "star":"1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"33186",
+         "person_id":"7211",
+         "name":"Nazanin Boniadi",
+         "last_name":"Boniadi",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"33337",
+         "person_id":"19444",
+         "name":"Tilda Cobham-Hervey",
+         "last_name":"Cobham-Hervey",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Sally",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"33183",
+         "person_id":"5025",
+         "name":"Armie Hammer",
+         "last_name":"Hammer",
+         "imdb_id":null,
+         "counter":1,
+         "note":"David",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"33184",
+         "person_id":"2656",
+         "name":"Jason Isaacs",
+         "last_name":"Isaacs",
+         "imdb_id":"nm0005042",
+         "counter":1,
+         "note":"Vasili",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31835",
+         "person_id":"18692",
+         "name":"Adithi Kalkunte",
+         "last_name":"Kalkunte",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Dimple",
+         "skip":false,
+         "star":"-1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"33185",
+         "person_id":"19370",
+         "name":"Angus McLaren",
+         "last_name":"McLaren",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31834",
+         "person_id":"18691",
+         "name":"Kapil Kumar Netra",
+         "last_name":"Netra",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Ajmal",
+         "skip":false,
+         "star":"-1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31699",
+         "person_id":"3542",
+         "name":"Dev Patel",
+         "last_name":"Patel",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Arjun",
+         "skip":false,
+         "star":"-1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31700",
+         "person_id":"18622",
+         "name":"Alex Pinder",
+         "last_name":"Pinder",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Butler Jamon",
+         "skip":false,
+         "star":"-1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      {  
+         "id":"31833",
+         "person_id":"18690",
+         "name":"Amriptal Singh",
+         "last_name":"Singh",
+         "imdb_id":null,
+         "counter":1,
+         "note":"Ismail",
+         "skip":false,
+         "star":"-1",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   ],
+   "dubs":[  
+
+   ],
+   "producer":{  
+      "31705":{  
+         "id":"31705",
+         "person_id":"10946",
+         "name":"Mike Gabrawy",
+         "last_name":"Gabrawy",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "31706":{  
+         "id":"31706",
+         "person_id":"10947",
+         "name":"Gary Hamilton",
+         "last_name":"Hamilton",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "nm0412588":{  
+         "id":"31707",
+         "person_id":"8864",
+         "name":"Basil Iwanyk",
+         "last_name":"Iwanyk",
+         "imdb_id":"nm0412588",
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "31708":{  
+         "id":"31708",
+         "person_id":"18625",
+         "name":"Andrew Ogilvie",
+         "last_name":"Ogilvie",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "31709":{  
+         "id":"31709",
+         "person_id":"18626",
+         "name":"Julie Ryan",
+         "last_name":"Ryan",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      },
+      "31836":{  
+         "id":"31836",
+         "person_id":"18693",
+         "name":"Jomon Thomas",
+         "last_name":"Thomas",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "editor":{  
+      "31710":{  
+         "id":"31710",
+         "person_id":"18627",
+         "name":"Peter McNulty",
+         "last_name":"McNulty",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "cinematography":{  
+      "31711":{  
+         "id":"31711",
+         "person_id":"18628",
+         "name":"Nick Remy Matthews",
+         "last_name":"Matthews",
+         "imdb_id":null,
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "music":{  
+      "nm2890617":{  
+         "id":"31712",
+         "person_id":"12663",
+         "name":"Volker Bertelmann",
+         "last_name":"Bertelmann",
+         "imdb_id":"nm2890617",
+         "counter":1,
+         "note":"",
+         "skip":false,
+         "star":"0",
+         "image_id":null,
+         "coordinates":null,
+         "thumbnail_url":null
+      }
+   },
+   "poster_url":"https:\/\/static.mozipremierek.hu\/poster\/2162-hotel-mumbai.38022.jpg",
+   "trailers":{  
+      "36980:trailer":{  
+         "id":"36980",
+         "type":"trailer",
+         "img":"https:\/\/i.ytimg.com\/vi\/Dz4jnixs8yA\/sddefault.jpg",
+         "url":"https:\/\/www.youtube.com\/watch?v=Dz4jnixs8yA",
+         "date":"2019-02-18",
+         "duration":[  
+            "1:46",
+            "PT01M46S"
+         ],
+         "category":false,
+         "status":"1",
+         "title":"HOTEL MUMBAI | Official Australian Teaser Trailer"
+      },
+      "38021:trailer":{  
+         "id":"38021",
+         "type":"trailer",
+         "img":"https:\/\/i.ytimg.com\/vi\/ljmJpeNMryc\/sddefault.jpg",
+         "url":"https:\/\/www.youtube.com\/watch?v=ljmJpeNMryc",
+         "date":"2019-03-23",
+         "duration":[  
+            "1:49",
+            "PT01M49S"
+         ],
+         "category":false,
+         "status":"1",
+         "title":"Hotel Mumbai (16) szinkroniz\u00e1lt el\u0151zetes"
+      },
+      "38037:trailer":{  
+         "id":"38037",
+         "type":"trailer",
+         "img":"https:\/\/i.ytimg.com\/vi\/bzVUqBYBBv4\/sddefault.jpg",
+         "url":"https:\/\/www.youtube.com\/watch?v=bzVUqBYBBv4",
+         "date":"2019-03-23",
+         "duration":[  
+            "1:49",
+            "PT01M49S"
+         ],
+         "category":false,
+         "status":0,
+         "title":"Hotel Mumbai (16) szinkroniz\u00e1lt el\u0151zetes"
+      },
+      "38038:trailer":{  
+         "id":"38038",
+         "type":"trailer",
+         "img":"https:\/\/i.ytimg.com\/vi\/bOxT46FqewY\/sddefault.jpg",
+         "url":"https:\/\/www.youtube.com\/watch?v=bOxT46FqewY",
+         "date":"2019-03-23",
+         "duration":[  
+            "1:49",
+            "PT01M49S"
+         ],
+         "category":false,
+         "status":"1",
+         "title":"Hotel Mumbai (16) feliratos el\u0151zetes"
+      }
+   },
+   "images":{  
+      "36982:upload-1550482669-1":{  
+         "id":"36982",
+         "type":"image",
+         "url":"2162-upload-1550482669-1.jpeg",
+         "date":"2019-02-18",
+         "selected":false,
+         "source":"upload-1550482669-1",
+         "status":"1",
+         "size":[  
+            "1200",
+            "600"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/fa\/fac167b9444e4be5cf217ad97ce264d3.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/73\/thumb_73961d8bbd0e603259004fb152673bee.jpg",
+         "title":""
+      },
+      "36983:upload-1550482670-1":{  
+         "id":"36983",
+         "type":"image",
+         "url":"2162-upload-1550482670-1.jpeg",
+         "date":"2019-02-18",
+         "selected":false,
+         "source":"upload-1550482670-1",
+         "status":"1",
+         "size":[  
+            "1340",
+            "754"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/57\/577aa1974c6bd5749abbc6abfb6e6ea6.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/6a\/thumb_6a7527e0291148fd54867f6e32ba9081.jpg",
+         "title":""
+      },
+      "38023:upload-1553319800-1":{  
+         "id":"38023",
+         "type":"image",
+         "url":"2162-upload-1553319800-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319800-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1281"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/e1\/e1caeff02f9b282c3aa9bf61a9a76cab.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/09\/thumb_090d2ceb42a80ce809a6116f7859748c.jpg",
+         "title":""
+      },
+      "38024:upload-1553319800-2":{  
+         "id":"38024",
+         "type":"image",
+         "url":"2162-upload-1553319800-2.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319800-2",
+         "status":0,
+         "size":[  
+            "1920",
+            "1280"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/c7\/c72b59482f8acbf245341f74ec866c3c.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/ed\/thumb_ed906404765dc5b0b95f674a5709f9e0.jpg",
+         "title":""
+      },
+      "38025:upload-1553319802-1":{  
+         "id":"38025",
+         "type":"image",
+         "url":"2162-upload-1553319802-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319802-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1281"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/8a\/8aa804af6dd3efd5579e714cbb96e860.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/c0\/thumb_c04d6d4e35d674de43d145a63a0bce3e.jpg",
+         "title":""
+      },
+      "38026:upload-1553319803-1":{  
+         "id":"38026",
+         "type":"image",
+         "url":"2162-upload-1553319803-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319803-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1337"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/49\/49f7e11d34a9111bcd635e0a3aa96649.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/a6\/thumb_a65b544b1c36299230dbe15033524e4c.jpg",
+         "title":""
+      },
+      "38027:upload-1553319804-1":{  
+         "id":"38027",
+         "type":"image",
+         "url":"2162-upload-1553319804-1.jpeg",
+         "date":"2019-03-23",
+         "selected":true,
+         "source":"upload-1553319804-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1280"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/58\/58a8c28b0dc0a9b513e83bc7311ab088.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/07\/thumb_07541a9704e6025b77b1d64e8b0261c6.jpg",
+         "title":""
+      },
+      "38028:upload-1553319805-1":{  
+         "id":"38028",
+         "type":"image",
+         "url":"2162-upload-1553319805-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319805-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1473"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/f6\/f61b6fcea6ffeba413267ce8329f0ef0.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/d0\/thumb_d08926abd45c94ed73d8072d834f5d20.jpg",
+         "title":""
+      },
+      "38029:upload-1553319806-1":{  
+         "id":"38029",
+         "type":"image",
+         "url":"2162-upload-1553319806-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319806-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1289"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/cb\/cb029e9163376cff87fb98c52b009bc0.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/29\/thumb_292341b5829729094a812144770a0782.jpg",
+         "title":""
+      },
+      "38030:upload-1553319807-1":{  
+         "id":"38030",
+         "type":"image",
+         "url":"2162-upload-1553319807-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319807-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1280"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/16\/16c2eff6139ebd4f7dd828365816882f.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/81\/thumb_812616c1be79a0830c6e0f49a76cba27.jpg",
+         "title":""
+      },
+      "38031:upload-1553319808-1":{  
+         "id":"38031",
+         "type":"image",
+         "url":"2162-upload-1553319808-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319808-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1280"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/03\/033f76da2401024680d3515bb9018cb0.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/8f\/thumb_8fd8d24d745b2e0419828b63b07b490f.jpg",
+         "title":""
+      },
+      "38032:upload-1553319809-1":{  
+         "id":"38032",
+         "type":"image",
+         "url":"2162-upload-1553319809-1.jpeg",
+         "date":"2019-03-23",
+         "selected":false,
+         "source":"upload-1553319809-1",
+         "status":0,
+         "size":[  
+            "1920",
+            "1279"
+         ],
+         "media_url":"https:\/\/static.mozipremierek.hu\/media\/99\/9930e0a24386c69596acbb6f3617c6cb.jpg",
+         "thumbnail_url":"https:\/\/static.mozipremierek.hu\/media\/ac\/thumb_ac8150d95b6e97de8343ba7b39725102.jpg",
+         "title":""
+      }
+   },
+   "links":{  
+      "36911:tmdb:416144":{  
+         "id":"36911",
+         "type":"link",
+         "url":"http:\/\/hotelmumbaifilm.com",
+         "date":"2019-02-15",
+         "status":0,
+         "title":"Hivatalos weboldal"
+      }
+   },
+   "imdb_id":"tt5461944",
+   "imdb_url":"http:\/\/www.imdb.com\/title\/tt5461944\/",
+   "netflix_id":null,
+   "netflix_url":null,
+   "__generated":"2019-05-08 03:43:43",
+   "no_banner":false,
+   "simple_year":null
+}

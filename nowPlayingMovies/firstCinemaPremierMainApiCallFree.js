@@ -4,6 +4,8 @@ const database = require('../database/update/insertFlag.update.js');
 const insertCinemaMovies = require('../database/insert/cinemaMovies.insert.js');
 const updateCinemaMovies = require('../database/update/cinemaMovies.update.js');
 
+const second = require('./secondCinemaPremierMovieApiCall.js');
+
 const pg = require('pg');
 const pool = new pg.Pool({
     user: 'horvathmiklos',
@@ -63,7 +65,6 @@ pool.query('SELECT cinema_premier_id FROM now_playing_movies', (error, results) 
                             genres: cinemaMovieGenres,
                             poster_thumb: cinemaPremierDataOnShow.poster_thumb,
                             original_title: cinemaPremierDataOnShow.original_title,
-                            imdb_rating: cinemaPremierDataOnShow.imdb_rating,
                             runtime: cinemaPremierDataOnShow.runtime,
                             distributor: cinemaPremierDataOnShow.distributor,
                             id: cinemaPremierDataOnShow.id,
@@ -71,11 +72,33 @@ pool.query('SELECT cinema_premier_id FROM now_playing_movies', (error, results) 
                             hu_plot: cinemaPremierDataOnShow.hu_plot,
                         });
 
+                        second.cinema(
+                            {
+                                cinema_premier_id: cinemaPremierDataOnShow.id,
+                                originalname: cinemaPremierDataOnShow.original_title,
+                                release_date: cinemaPremierDataOnShow.hu_release,
+                                movie_name: cinemaPremierDataOnShow.hu_title,
+                                description: cinemaPremierDataOnShow.hu_plot,
+                            },
+                            'insert'
+                        );
+
                     } else {
 
                         updateCinemaMovies.nowPlayingMoviesUpdate({
                             id: cinemaPremierDataOnShow.id,
                         });
+
+                        second.cinema(
+                            {
+                                cinema_premier_id: cinemaPremierDataOnShow.id,
+                                originalname: cinemaPremierDataOnShow.original_title,
+                                release_date: cinemaPremierDataOnShow.hu_release,
+                                movie_name: cinemaPremierDataOnShow.hu_title,
+                                description: cinemaPremierDataOnShow.hu_plot,
+                            },
+                            'update'
+                        );
                     }
                 });
         });

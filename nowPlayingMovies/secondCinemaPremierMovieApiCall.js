@@ -2,11 +2,12 @@ const request = require('request');
 const RateLimiter = require('request-rate-limiter');
 const bcrypt = require('bcrypt');
 const moment = require('moment');
-const YouTube = require('youtube-node');
-const database = require('../database/update/insertFlag.update.js');
+//const database = require('../database/update/insertFlag.update.js');
 
-const youTube = new YouTube();
-youTube.setKey('AIzaSyB1OOSpTREs85WUMvIgJvLTZKye4BVsoFU');
+//const youtube = require('./features/youtubeMovieTrailer.js');
+const movie = require('./thirdOmdbApiCallFree.js');
+//let updateHelpers = new movie();
+
 
 const limiter = new RateLimiter({
     rate: 10 // requests per interval,
@@ -66,43 +67,31 @@ function kebabToSnake(str) {
     return string;
 }
 
-let movieImdbId = [];
-let movieTrailerImdbId = [];
-pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) => {
-    if (movieTrailerResults.rowCount !== 0) {
-        movieTrailerResults.rows.forEach(function(movieTrailerValue) {
-            movieTrailerImdbId.push(movieTrailerValue.imdb_id);
-        });
-    }
-    pool.query('SELECT id FROM movie_imdb_id;', (error, movieImdbIdResults) => {
-        if (movieImdbIdResults.rowCount !== 0) {
-            movieImdbIdResults.rows.forEach(function(movieImdbIdValue) {
-                movieImdbId.push(movieImdbIdValue.id);
-            });
-        }
+module.exports = {
+    cinema: function(value, check) {
+        let movieImdbId = [];
+        let movieTrailerImdbId = [];
+        pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) => {
+            if (movieTrailerResults.rowCount !== 0) {
+                movieTrailerResults.rows.forEach(function(movieTrailerValue) {
+                    movieTrailerImdbId.push(movieTrailerValue.imdb_id);
+                });
+            }
+            pool.query('SELECT id FROM movie_imdb_id;', (error, movieImdbIdResults) => {
+                if (movieImdbIdResults.rowCount !== 0) {
+                    movieImdbIdResults.rows.forEach(function(movieImdbIdValue) {
+                        movieImdbId.push(movieImdbIdValue.id);
+                    });
+                }
 
-        pool.query('SELECT originalname, cinema_premier_id, movie_name, imdb_id, description, release_date FROM now_playing_movies WHERE insert_flag = 1;', (error, results) => {
+                //pool.query('SELECT originalname, cinema_premier_id, movie_name, imdb_id, description, release_date FROM now_playing_movies WHERE insert_flag = 1;', (error, results) => {
 
-            results.rows.forEach(function(value) {
+                // results.rows.forEach(function(value) {
 
                 request(
                     'https://mozipremierek.hu/api/movie/' + value.cinema_premier_id,
                     function(error, response, cinemaPremierDataOnShow) {
-                        if ((typeof value.imdb_id !== 'undefined' && value.imdb_id !== '' && value.imdb_id !== null) || (typeof JSON.parse(cinemaPremierDataOnShow).imdb_id !== 'undefined' && JSON.parse(cinemaPremierDataOnShow).imdb_id !== '')) {
-
-                            pool.query(
-                                'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
-                                [
-                                    JSON.parse(cinemaPremierDataOnShow).imdb_id,
-                                    value.cinema_premier_id
-                                ],
-                                (error, results) => {
-                                    if (error) {
-                                        console.log('now_playing_movies imdb_id INSERT: an error occured');
-                                    }
-                                    console.log('now_playing_movies imdb_id INSERT: ok done');
-                                }
-                            )
+                        if (typeof JSON.parse(cinemaPremierDataOnShow).imdb_id !== 'undefined' && JSON.parse(cinemaPremierDataOnShow).imdb_id !== '') {
 
                             if (movieImdbId.indexOf(JSON.parse(cinemaPremierDataOnShow).imdb_id) === -1) {
 
@@ -137,91 +126,97 @@ pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) =>
 
                             }
 
-                            limiter.request({
-                                url: 'https://api.themoviedb.org/3/find/' + JSON.parse(cinemaPremierDataOnShow).imdb_id + '?api_key=f4e6009df6f9b64f5063de615df82bf9&language=hu-HU&external_source=imdb_id',
-                            }).then(function(response) {
-
-                                if (typeof JSON.parse(response.body).movie_results !== 'undefined') {
-
-                                    for (var key in JSON.parse(response.body).movie_results) {
-                                        //console.log(JSON.parse(response.body).movie_results[key].backdrop_path);
-                                        var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
-                                            JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
-
-                                        pool.query(
-                                            'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
-                                            [
-                                                'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
-                                                value.cinema_premier_id
-                                            ],
-                                            (error, results) => {
-                                                if (error) {
-                                                    console.log('now_playing_movies UPDATE backdrop_path: an error occured');
-                                                }
-                                                console.log('now_playing_movies UPDATE backdrop_path: ok done');
-                                            }
-                                        )
-
-                                        pool.query(
-                                            'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
-                                            [
-                                                JSON.parse(response.body).movie_results[key].id,
-                                                value.cinema_premier_id
-                                            ],
-                                            (error, results) => {
-                                                if (error) {
-                                                    console.log('now_playing_movies UPDATE tmdb_id: an error occured');
-                                                }
-                                                console.log('now_playing_movies UPDATE tmdb_id: ok done');
-                                            }
-                                        )
-
-                                        pool.query(
-                                            'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
-                                            [
-                                                overview,
-                                                value.cinema_premier_id
-                                            ],
-                                            (error, results) => {
-                                                if (error) {
-                                                    console.log('now_playing_movies UPDATE description: an error occured');
-                                                }
-                                                console.log('now_playing_movies UPDATE description: ok done');
-                                            }
-                                        )
-                                    }
-                                }
-                            });
-
-                            if (movieTrailerImdbId.indexOf(value.imdb_id) === -1) {
-                                youTube.search(value.originalname + ' ' + 'Official Trailer' + ' ' + moment(value.release_date).format("YYYY"), 2, function(error, result) {
-                                    if (error) {
-                                        console.log(error);
-                                    } else {
-                                        var trailerIds = [];
-                                        for (let i = 0; i < result.items.length; i++) {
-                                            console.log(JSON.stringify(result.items[i].id.videoId, null, 2));
-                                            console.log(JSON.stringify(result.items[i].snippet.title, null, 2));
-                                            trailerIds.push(result.items[i].id.videoId);
+                            if (check === 'insert') {
+                                pool.query(
+                                    'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
+                                    [
+                                        JSON.parse(cinemaPremierDataOnShow).imdb_id,
+                                        value.cinema_premier_id
+                                    ],
+                                    (error, results) => {
+                                        if (error) {
+                                            console.log('now_playing_movies imdb_id INSERT: an error occured');
                                         }
-                                        console.log(trailerIds);
+                                        console.log('now_playing_movies imdb_id INSERT: ok done');
+                                        new movie().detailsByImdbId({
+                                            imdb_id: JSON.parse(cinemaPremierDataOnShow).imdb_id,
+                                            cinema_premier_id: value.cinema_premier_id,
+                                        });
+                                        new movie().posterByImdbId({
+                                            imdb_id: JSON.parse(cinemaPremierDataOnShow).imdb_id,
+                                            cinema_premier_id: value.cinema_premier_id,
+                                        });
+                                    }
+                                )
 
-                                        pool.query(
-                                            'INSERT INTO movie_trailer (imdb_id, movie_original_name, trailer_ids) VALUES ($1, $2, $3);',
-                                            [
-                                                value.imdb_id,
-                                                value.originalname,
-                                                trailerIds
-                                            ],
-                                            (error, results) => {
-                                                if (error) {
-                                                    console.log('now_playing_movies INSERT: an error occured', error);
+
+                                limiter.request({
+                                    url: 'https://api.themoviedb.org/3/find/' + JSON.parse(cinemaPremierDataOnShow).imdb_id + '?api_key=f4e6009df6f9b64f5063de615df82bf9&language=hu-HU&external_source=imdb_id',
+                                }).then(function(response) {
+
+                                    if (typeof JSON.parse(response.body).movie_results !== 'undefined') {
+
+                                        for (var key in JSON.parse(response.body).movie_results) {
+                                            //console.log(JSON.parse(response.body).movie_results[key].backdrop_path);
+                                            var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
+                                                JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
+
+                                            pool.query(
+                                                'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
+                                                [
+                                                    'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
+                                                    value.cinema_premier_id
+                                                ],
+                                                (error, results) => {
+                                                    if (error) {
+                                                        console.log('now_playing_movies UPDATE backdrop_path: an error occured');
+                                                    }
+                                                    console.log('now_playing_movies UPDATE backdrop_path: ok done');
                                                 }
-                                                console.log('now_playing_movies INSERT: ok done');
+                                            )
 
-                                            });
+                                            pool.query(
+                                                'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
+                                                [
+                                                    JSON.parse(response.body).movie_results[key].id,
+                                                    value.cinema_premier_id
+                                                ],
+                                                (error, results) => {
+                                                    if (error) {
+                                                        console.log('now_playing_movies UPDATE tmdb_id: an error occured');
+                                                    }
+                                                    console.log('now_playing_movies UPDATE tmdb_id: ok done');
+                                                    new movie().detailsByTmdbId({
+                                                        tmdb_id: JSON.parse(response.body).movie_results[key].id
+                                                    });
+                                                }
+                                            )
+
+
+                                            pool.query(
+                                                'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
+                                                [
+                                                    overview,
+                                                    value.cinema_premier_id
+                                                ],
+                                                (error, results) => {
+                                                    if (error) {
+                                                        console.log('now_playing_movies UPDATE description: an error occured');
+                                                    }
+                                                    console.log('now_playing_movies UPDATE description: ok done');
+                                                }
+                                            )
+                                        }
                                     }
                                 });
+
+                                if (movieTrailerImdbId.indexOf(value.imdb_id) === -1) {
+                                    new movie().trailer({
+                                        originalName: value.originalname,
+                                        releaseDate: value.release_date,
+                                        imdbId: value.imdb_id,
+                                    });
+                                }
                             }
                         } else {
                             request(
@@ -241,19 +236,6 @@ pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) =>
                                         JSON.parse(body).d.forEach(function(data) {
 
                                             if (data.y === parseInt(moment(value.release_date).format('YYYY')) && data.q === 'feature') {
-                                                pool.query(
-                                                    'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
-                                                    [
-                                                        data.id,
-                                                        value.cinema_premier_id
-                                                    ],
-                                                    (error, results) => {
-                                                        if (error) {
-                                                            console.log('now_playing_movies imdb_id INSERT: an error occured');
-                                                        }
-                                                        console.log('now_playing_movies imdb_id INSERT: ok done');
-                                                    }
-                                                )
 
                                                 if (movieImdbId.indexOf(data.id) === -1) {
 
@@ -288,99 +270,108 @@ pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) =>
 
                                                 }
 
-                                                limiter.request({
-                                                    url: 'https://api.themoviedb.org/3/find/' + JSON.parse(cinemaPremierDataOnShow).imdb_id + '?api_key=f4e6009df6f9b64f5063de615df82bf9&language=hu-HU&external_source=imdb_id',
-                                                }).then(function(response) {
+                                                if (check === 'insert') {
 
-                                                    if (typeof JSON.parse(response.body).movie_results !== 'undefined') {
-
-                                                        for (var key in JSON.parse(response.body).movie_results) {
-                                                            //console.log(JSON.parse(response.body).movie_results[key].backdrop_path);
-                                                            var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
-                                                                JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
-
-                                                            pool.query(
-                                                                'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
-                                                                [
-                                                                    'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
-                                                                    value.cinema_premier_id
-                                                                ],
-                                                                (error, results) => {
-                                                                    if (error) {
-                                                                        console.log('now_playing_movies UPDATE backdrop_path: an error occured');
-                                                                    }
-                                                                    console.log('now_playing_movies UPDATE backdrop_path: ok done');
-                                                                }
-                                                            )
-
-                                                            pool.query(
-                                                                'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
-                                                                [
-                                                                    JSON.parse(response.body).movie_results[key].id,
-                                                                    value.cinema_premier_id
-                                                                ],
-                                                                (error, results) => {
-                                                                    if (error) {
-                                                                        console.log('now_playing_movies UPDATE tmdb_id: an error occured');
-                                                                    }
-                                                                    console.log('now_playing_movies UPDATE tmdb_id: ok done');
-                                                                }
-                                                            )
-
-                                                            pool.query(
-                                                                'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
-                                                                [
-                                                                    overview,
-                                                                    value.cinema_premier_id
-                                                                ],
-                                                                (error, results) => {
-                                                                    if (error) {
-                                                                        console.log('now_playing_movies UPDATE description: an error occured');
-                                                                    }
-                                                                    console.log('now_playing_movies UPDATE description: ok done');
-                                                                }
-                                                            )
+                                                    pool.query(
+                                                        'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
+                                                        [
+                                                            data.id,
+                                                            value.cinema_premier_id
+                                                        ],
+                                                        (error, results) => {
+                                                            if (error) {
+                                                                console.log('now_playing_movies imdb_id INSERT: an error occured');
+                                                            }
+                                                            console.log('now_playing_movies imdb_id INSERT: ok done');
+                                                            new movie().detailsByImdbId({
+                                                                imdb_id: data.id,
+                                                                cinema_premier_id: value.cinema_premier_id,
+                                                            });
+                                                            new movie().posterByImdbId({
+                                                                imdb_id: data.id,
+                                                                cinema_premier_id: value.cinema_premier_id,
+                                                            });
                                                         }
-                                                    }
-                                                });
+                                                    )
+
+                                                    limiter.request({
+                                                        url: 'https://api.themoviedb.org/3/find/' + data.id + '?api_key=f4e6009df6f9b64f5063de615df82bf9&language=hu-HU&external_source=imdb_id',
+                                                    }).then(function(response) {
+
+                                                        if (typeof JSON.parse(response.body).movie_results !== 'undefined') {
+
+                                                            for (var key in JSON.parse(response.body).movie_results) {
+                                                                //console.log(JSON.parse(response.body).movie_results[key].backdrop_path);
+                                                                var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
+                                                                    JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
+
+                                                                pool.query(
+                                                                    'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
+                                                                    [
+                                                                        'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
+                                                                        value.cinema_premier_id
+                                                                    ],
+                                                                    (error, results) => {
+                                                                        if (error) {
+                                                                            console.log('now_playing_movies UPDATE backdrop_path: an error occured');
+                                                                        }
+                                                                        console.log('now_playing_movies UPDATE backdrop_path: ok done');
+                                                                    }
+                                                                )
+
+                                                                pool.query(
+                                                                    'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
+                                                                    [
+                                                                        JSON.parse(response.body).movie_results[key].id,
+                                                                        value.cinema_premier_id
+                                                                    ],
+                                                                    (error, results) => {
+                                                                        if (error) {
+                                                                            console.log('now_playing_movies UPDATE tmdb_id: an error occured');
+                                                                        }
+                                                                        console.log('now_playing_movies UPDATE tmdb_id: ok done');
+                                                                        new movie().detailsByTmdbId({
+                                                                            tmdb_id: JSON.parse(response.body).movie_results[key].id
+                                                                        });
+                                                                    }
+                                                                )
+
+                                                                pool.query(
+                                                                    'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
+                                                                    [
+                                                                        overview,
+                                                                        value.cinema_premier_id
+                                                                    ],
+                                                                    (error, results) => {
+                                                                        if (error) {
+                                                                            console.log('now_playing_movies UPDATE description: an error occured');
+                                                                        }
+                                                                        console.log('now_playing_movies UPDATE description: ok done');
+                                                                    }
+                                                                )
+                                                            }
+                                                        }
+                                                    });
+                                                }
                                             }
                                         });
                                     }
                                 });
 
                             if (movieTrailerImdbId.indexOf(data.id) === -1) {
-                                youTube.search(value.originalname + ' ' + 'Official Trailer' + ' ' + moment(value.release_date).format("YYYY"), 2, function(error, result) {
-                                    if (error) {
-                                        console.log('Youtube Error', error);
-                                    } else {
-                                        var trailerIds = [];
-                                        for (let i = 0; i < result.items.length; i++) {
-                                            console.log(JSON.stringify(result.items[i].id.videoId, null, 2));
-                                            console.log(JSON.stringify(result.items[i].snippet.title, null, 2));
-                                            trailerIds.push(result.items[i].id.videoId);
-                                        }
-                                        console.log(trailerIds);
 
-                                        pool.query(
-                                            'INSERT INTO movie_trailer (imdb_id, movie_original_name, trailer_ids) VALUES ($1, $2, $3);',
-                                            [
-                                                value.imdb_id,
-                                                value.originalname,
-                                                trailerIds
-                                            ],
-                                            (error, results) => {
-                                                if (error) {
-                                                    console.log('now_playing_movies INSERT: an error occured', error);
-                                                }
-                                                console.log('now_playing_movies INSERT: ok done');
-
-                                            });
-                                    }
+                                new movie.trailer({
+                                    originalName: value.originalname,
+                                    releaseDate: value.release_date,
+                                    imdbId: value.imdb_id,
                                 });
                             }
                         }
                     });
             });
         });
-    });
-});
+        // });
+        //});
+
+    }
+}
