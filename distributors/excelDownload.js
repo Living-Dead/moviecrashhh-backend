@@ -9,8 +9,8 @@ const yearAndMonthDate = moment().format('YYYY/MM');
 const currentDate = moment().add(-1, 'days').format('YYYYMMDD');
 
 http.get(
-    //'http://filmforgalmazok.hu/wp-content/uploads/2019/07/Megjelen%C3%A9s-20190711.xlsx',
-     urlConfig.movieDistributorExcel + yearAndMonthDate + '/Megjelen%C3%A9s-' + currentDate + '.xlsx',
+    'http://filmforgalmazok.hu/wp-content/uploads/2019/08/Megjelenés-20190812.xlsx',
+     //urlConfig.movieDistributorExcel + yearAndMonthDate + '/Megjelen%C3%A9s-' + currentDate + '.xlsx',
      (res) => {
     debugger
     const {

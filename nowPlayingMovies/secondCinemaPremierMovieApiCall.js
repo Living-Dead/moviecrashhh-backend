@@ -1,4 +1,5 @@
 const request = require('request');
+const dbConfig = require('../config/config.js');
 const RateLimiter = require('request-rate-limiter');
 const bcrypt = require('bcrypt');
 const moment = require('moment');
@@ -18,13 +19,7 @@ const limiter = new RateLimiter({
     // n seconds or more. defaults
     // to 5 minutes
 });
-const pg = require('pg');
-const pool = new pg.Pool({
-    user: 'horvathmiklos',
-    host: '127.0.0.1',
-    database: 'postgres',
-    port: '5432'
-});
+
 
 function characterReplace(str) {
     var string = '';
@@ -68,23 +63,30 @@ function kebabToSnake(str) {
 }
 
 module.exports = {
+
+  /**
+   * DB Query
+   * @param {object} req
+   * @param {object} res
+   * @returns {object} object 
+   */
     cinema: function(value, check) {
         let movieImdbId = [];
         let movieTrailerImdbId = [];
-        pool.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) => {
+        dbConfig.query('SELECT imdb_id FROM movie_trailer;', (error, movieTrailerResults) => {
             if (movieTrailerResults.rowCount !== 0) {
                 movieTrailerResults.rows.forEach(function(movieTrailerValue) {
                     movieTrailerImdbId.push(movieTrailerValue.imdb_id);
                 });
             }
-            pool.query('SELECT id FROM movie_imdb_id;', (error, movieImdbIdResults) => {
+            dbConfig.query('SELECT id FROM movie_imdb_id;', (error, movieImdbIdResults) => {
                 if (movieImdbIdResults.rowCount !== 0) {
                     movieImdbIdResults.rows.forEach(function(movieImdbIdValue) {
                         movieImdbId.push(movieImdbIdValue.id);
                     });
                 }
 
-                //pool.query('SELECT originalname, cinema_premier_id, movie_name, imdb_id, description, release_date FROM now_playing_movies WHERE insert_flag = 1;', (error, results) => {
+                //dbConfig.query('SELECT originalname, cinema_premier_id, movie_name, imdb_id, description, release_date FROM now_playing_movies WHERE insert_flag = 1;', (error, results) => {
 
                 // results.rows.forEach(function(value) {
 
@@ -95,8 +97,13 @@ module.exports = {
 
                             if (movieImdbId.indexOf(JSON.parse(cinemaPremierDataOnShow).imdb_id) === -1) {
 
-                                pool.query(
-                                    'INSERT INTO movie_imdb_id ( movie_name, id, flag ) VALUES ($1, $2, $3)',
+                                dbConfig.query(
+                                     `INSERT INTO
+                                         movie_imdb_id (
+                                             movie_name,
+                                             id,
+                                             flag )
+                                         VALUES ($1, $2, $3);`,
                                     [
                                         value.movie_name,
                                         JSON.parse(cinemaPremierDataOnShow).imdb_id,
@@ -110,8 +117,13 @@ module.exports = {
 
                                     });
                             } else {
-                                pool.query(
-                                    'UPDATE movie_imdb_id SET flag = $1 WHERE id = $2',
+                                dbConfig.query(
+                                    `UPDATE 
+                                        movie_imdb_id 
+                                    SET 
+                                        flag = $1 
+                                    WHERE 
+                                        id = $2;`,
                                     [
                                         1,
                                         JSON.parse(cinemaPremierDataOnShow).imdb_id
@@ -127,8 +139,15 @@ module.exports = {
                             }
 
                             if (check === 'insert') {
-                                pool.query(
-                                    'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
+                                dbConfig.query(
+                                    `UPDATE 
+                                        now_playing_movies 
+                                    SET 
+                                        imdb_id = $1 
+                                    WHERE 
+                                        cinema_premier_id = $2 
+                                    AND 
+                                        imdb_id IS NULL;`,
                                     [
                                         JSON.parse(cinemaPremierDataOnShow).imdb_id,
                                         value.cinema_premier_id
@@ -149,7 +168,6 @@ module.exports = {
                                     }
                                 )
 
-
                                 limiter.request({
                                     url: 'https://api.themoviedb.org/3/find/' + JSON.parse(cinemaPremierDataOnShow).imdb_id + '?api_key=f4e6009df6f9b64f5063de615df82bf9&language=hu-HU&external_source=imdb_id',
                                 }).then(function(response) {
@@ -161,8 +179,15 @@ module.exports = {
                                             var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
                                                 JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
 
-                                            pool.query(
-                                                'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
+                                            dbConfig.query(
+                                                `UPDATE 
+                                                    now_playing_movies 
+                                                SET 
+                                                    backdrop_path = $1 
+                                                WHERE
+                                                    cinema_premier_id = $2
+                                                AND 
+                                                    backdrop_path IS NULL;`,
                                                 [
                                                     'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
                                                     value.cinema_premier_id
@@ -175,7 +200,7 @@ module.exports = {
                                                 }
                                             )
 
-                                            pool.query(
+                                            dbConfig.query(
                                                 'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
                                                 [
                                                     JSON.parse(response.body).movie_results[key].id,
@@ -192,8 +217,7 @@ module.exports = {
                                                 }
                                             )
 
-
-                                            pool.query(
+                                            dbConfig.query(
                                                 'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
                                                 [
                                                     overview,
@@ -239,7 +263,7 @@ module.exports = {
 
                                                 if (movieImdbId.indexOf(data.id) === -1) {
 
-                                                    pool.query(
+                                                    dbConfig.query(
                                                         'INSERT INTO movie_imdb_id ( movie_name, id, flag ) VALUES ($1, $2, $3)',
                                                         [
                                                             value.movie_name,
@@ -254,7 +278,7 @@ module.exports = {
 
                                                         });
                                                 } else {
-                                                    pool.query(
+                                                    dbConfig.query(
                                                         'UPDATE movie_imdb_id SET flag = $1 WHERE id = $2',
                                                         [
                                                             1,
@@ -272,7 +296,7 @@ module.exports = {
 
                                                 if (check === 'insert') {
 
-                                                    pool.query(
+                                                    dbConfig.query(
                                                         'UPDATE now_playing_movies SET imdb_id = $1 WHERE cinema_premier_id = $2 AND imdb_id IS NULL;',
                                                         [
                                                             data.id,
@@ -305,7 +329,7 @@ module.exports = {
                                                                 var overview = typeof JSON.parse(response.body).movie_results[key].overview !== 'undefined' &&
                                                                     JSON.parse(response.body).movie_results[key].overview !== '' ? JSON.parse(response.body).movie_results[key].overview : value.description;
 
-                                                                pool.query(
+                                                                dbConfig.query(
                                                                     'UPDATE now_playing_movies SET backdrop_path = $1 WHERE cinema_premier_id = $2 AND backdrop_path IS NULL;',
                                                                     [
                                                                         'https://image.tmdb.org/t/p/original/' + JSON.parse(response.body).movie_results[key].backdrop_path,
@@ -319,7 +343,7 @@ module.exports = {
                                                                     }
                                                                 )
 
-                                                                pool.query(
+                                                                dbConfig.query(
                                                                     'UPDATE now_playing_movies SET tmdb_id = $1 WHERE cinema_premier_id = $2 AND tmdb_id IS NULL;',
                                                                     [
                                                                         JSON.parse(response.body).movie_results[key].id,
@@ -336,7 +360,7 @@ module.exports = {
                                                                     }
                                                                 )
 
-                                                                pool.query(
+                                                                dbConfig.query(
                                                                     'UPDATE now_playing_movies SET description = $1 WHERE cinema_premier_id = $2;',
                                                                     [
                                                                         overview,

@@ -1,14 +1,16 @@
 const request = require('request');
 const pg = require('pg');
-const pool = new pg.Pool({
+/*const dbConfig = new pg.dbConfig({
     user: 'horvathmiklos',
     host: '127.0.0.1',
     database: 'postgres',
     port: '5432'
 });
-var RateLimiter = require('request-rate-limiter');
+*/
+const dbConfig = require('../config/config.js');
+const RateLimiter = require('request-rate-limiter');
 
-var limiter = new RateLimiter({
+const limiter = new RateLimiter({
     rate: 10 // requests per interval,
 
         ,
@@ -44,7 +46,7 @@ function createUniqueActorId(object) {
 
 
 
-//pool.query('SELECT cinema_premier_id, imdb_id, tmdb_id, originalname FROM now_playing_movies WHERE insert_flag = 1', (error, results) => {
+//dbConfig.query('SELECT cinema_premier_id, imdb_id, tmdb_id, originalname FROM now_playing_movies WHERE insert_flag = 1', (error, results) => {
 class movie {
     detailsByImdbId(value) {
 
@@ -64,13 +66,19 @@ class movie {
                      function(error, response, omdbApi) {*/
 
 
-                pool.query(
-                    'UPDATE now_playing_movies SET director = $1, writer = $2, awards = $3, official_website = $4 WHERE cinema_premier_id = $5',
+                dbConfig.query(
+                    `UPDATE 
+                        now_playing_movies 
+                    SET 
+                        director = $1,
+                        writer = $2,
+                        awards = $3
+                    WHERE 
+                        cinema_premier_id = $4;`,
                     [
                         JSON.parse(omdbApi.body).Director,
                         JSON.parse(omdbApi.body).Writer,
                         JSON.parse(omdbApi.body).Awards,
-                        JSON.parse(omdbApi.body).Website,
                         value.cinema_premier_id
                     ],
                     (error, results) => {
@@ -94,8 +102,13 @@ class movie {
                 function(error, response, imdb) {
 
                     if (typeof JSON.parse(imdb).d !== 'undefined') {
-                        pool.query(
-                            'UPDATE now_playing_movies SET image = $1 WHERE cinema_premier_id = $2 AND image IS NULL',
+                        dbConfig.query(
+                            `UPDATE 
+                                now_playing_movies 
+                            SET 
+                                image = $1 
+                            WHERE 
+                                cinema_premier_id = $2;`,
                             [
                                 JSON.parse(imdb).d[0].i.imageUrl,
                                 value.cinema_premier_id
@@ -121,8 +134,13 @@ class movie {
 
         }).then(function(theMovieDb) {
 
-            pool.query(
-                'UPDATE now_playing_movies SET production = $1 WHERE tmdb_id = $2',
+            dbConfig.query(
+                `UPDATE 
+                    now_playing_movies 
+                SET
+                    production = $1
+                WHERE
+                    tmdb_id = $2;`,
                 [
                     JSON.parse(theMovieDb.body).production_companies,
                     value.tmdb_id
@@ -132,22 +150,29 @@ class movie {
                         console.log('now_playing_movies UPDATE themoviedb production: an error occured', error);
                     }
                     console.log('now_playing_movies UPDATE themoviedb production: ok done');
+                    dbConfig.query(
+                        `UPDATE 
+                            now_playing_movies 
+                        SET 
+                            official_website = $1 
+                        WHERE 
+                            tmdb_id = $2 
+                        AND 
+                            official_website IS NULL;`,
+                        [
+                            JSON.parse(theMovieDb.body).homepage,
+                            value.tmdb_id
+                        ],
+                        (error, results) => {
+                            if (error) {
+                                console.log('now_playing_movies UPDATE themoviedb official_website: an error occured', error);
+                            }
+                            console.log('now_playing_movies UPDATE themoviedb official_website: ok done');
 
+                        });
                 });
 
-            pool.query(
-                'UPDATE now_playing_movies SET official_website = $1 WHERE tmdb_id = $2 AND official_website IS NULL',
-                [
-                    JSON.parse(theMovieDb.body).homepage,
-                    value.tmdb_id
-                ],
-                (error, results) => {
-                    if (error) {
-                        console.log('now_playing_movies UPDATE themoviedb official_website: an error occured', error);
-                    }
-                    console.log('now_playing_movies UPDATE themoviedb official_website: ok done');
 
-                });
 
         });
 
@@ -167,8 +192,13 @@ class movie {
                 }
                 console.log(trailerIds);
 
-                pool.query(
-                    'INSERT INTO movie_trailer (imdb_id, movie_original_name, trailer_ids) VALUES ($1, $2, $3);',
+                dbConfig.query(
+                    `INSERT INTO 
+                        movie_trailer (
+                            imdb_id, 
+                            original_movie_name, 
+                            trailer_ids)
+                    VALUES ($1, $2, $3);`,
                     [
                         value.imdbId,
                         value.originalName,

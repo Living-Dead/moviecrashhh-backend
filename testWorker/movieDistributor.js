@@ -1,8 +1,9 @@
+
 const { Worker, isMainThread, workerData } = require('worker_threads');
 var exitX = '';
 
 
-exports.runMovieDistributorWorker = function() {
+//exports.runMovieDistributorWorker = function() {
 
 function runService(workerData) {
   const worker = new Worker(workerData, { workerData });
@@ -71,4 +72,4 @@ async function run() {
 
 
 run().catch(err => console.error(err));
-}
+//}

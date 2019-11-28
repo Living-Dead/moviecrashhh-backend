@@ -2,9 +2,9 @@ const dbConfig = require('../../config/config.js');
 
 module.exports = {
     nowPlayingMoviesInsertToDb: function(object) {
-        console.log('INSERT ----', object);
+        //console.log('INSERT ----', object);
         dbConfig.query(
-            'INSERT INTO now_playing_movies ( movie_name, genre, image, originalname, runtime, distributor, cinema_premier_id, release_date, description, insert_flag) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
+            'INSERT INTO now_playing_movies ( movie_name, genre, image, original_name, runtime, distributor, cinema_premier_id, release_date, description, insert_flag) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)',
             [
                 object.hu_title,
                 object.genres,

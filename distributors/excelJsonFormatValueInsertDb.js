@@ -6,7 +6,8 @@ const pool = new pg.Pool({
     user: 'horvathmiklos',
     host: '127.0.0.1',
     database: 'postgres',
-    port: '5432'
+    port: '5432',
+    password: 'postgres'
 });
 
 function kebabToSnake(str) {
@@ -73,12 +74,14 @@ var result = ''; // lives outside loop
 
 
 var imdbId = [];
-pool.query('SELECT imdb_id FROM distributor', (error, results) => {
+pool.query('SELECT imdb_id FROM distributors', (error, results) => {
+    if (results !== 'undefined') {
     if (results.rowCount !== 0) {
         results.rows.forEach(function(value) {
             imdbId.push(value.imdb_id);
         });
     }
+}
     distributor.forEach(function(element) {
         if (typeof element["IMDB link"] !== 'undefined' && element["IMDB link"] !== '' && element["IMDB link"] !== null) {
             //console.log(element["IMDB link"]);
@@ -108,14 +111,13 @@ pool.query('SELECT imdb_id FROM distributor', (error, results) => {
                 //console.log(moment(element["premier"]).format("YYYY-MM-DD"));
 
                 pool.query(
-                    'INSERT INTO distributor ( movie_name, imdb_id, distributor_name, distributor_convert_name, up_rating, art_movie_flag, date ) VALUES ($1, $2, $3, $4, $5, $6, $7)',
+                    'INSERT INTO distributors ( movie_name, imdb_id, distributor_name, distributor_convert_name, up_rating, date ) VALUES ($1, $2, $3, $4, $5, $6)',
                     [
                         element["Title"].replace(/\([0-9A-Z]+\)/gi, '').replace(/\[\s[A-Z]+\s\]/gi, ''),
                         element["IMDB link"].replace('https://www.imdb.com/title/', ''),
                         element["Distributor – HUN"],
                         distributionFormatter(element["Distributor – HUN"]),
                         (typeof upRating !== 'undefined' && upRating !== null && upRating !== '') ? kebabToSnake(upRating[0]) : '',
-                        (typeof artMovie !== 'undefined' && artMovie !== null && artMovie !== '') ? characterReplace(artMovie[0]) : '',
                         result
                     ],
                     (error, results) => {

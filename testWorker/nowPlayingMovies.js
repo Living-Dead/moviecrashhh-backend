@@ -107,7 +107,7 @@ function runService(workerData) {
 }
 
 
-function runService2(workerData) {
+/*function runService2(workerData) {
   const worker = new Worker('../nowPlayingMovies/secondCinemaPremierMovieApiCall.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
@@ -118,7 +118,7 @@ function runService2(workerData) {
   );
   */
 
-  worker.on("exit", function (code) {
+ /* worker.on("exit", function (code) {
     if (code == 0) {
       runService3();
     } else {
@@ -145,15 +145,15 @@ function runService3(workerData) {
   worker.postMessage("three times");
   worker.postMessage("exit");
   setTimeout(() => worker.postMessage("you won't see me"), 100);
-}
+}*/
 
-function runService4(workerData) {
+function runService2(workerData) {
   const worker = new Worker('../tvSeries/justWatchTvSeriesApiFree.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
   worker.on("error", code => new Error(`Worker error with exit code ${code}`));
   worker.on("exit", code =>
-     runService5()
+     runService3()
   );
   worker.postMessage("twice");
   worker.postMessage("three times");
@@ -161,7 +161,7 @@ function runService4(workerData) {
   setTimeout(() => worker.postMessage("you won't see me"), 100);
 }
 
-function runService5(workerData) {
+function runService3(workerData) {
   const worker = new Worker('../cast/actorsApiCallFree.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
@@ -174,11 +174,11 @@ function runService5(workerData) {
   */
   worker.on("exit", function (code) {
     if (code == 0) {
-      runService6();
+      runService4();
     } else {
       console.log('error error error ../cast/actorsApiCallFree.js');
       setTimeout(function() {
-        runService5();
+        runService3();
       }, 11000);
     }
   });
@@ -188,13 +188,13 @@ function runService5(workerData) {
   setTimeout(() => worker.postMessage("you won't see me"), 100);
 }
 
-function runService6(workerData) {
+function runService4(workerData) {
   const worker = new Worker('../crawlerTest.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
   worker.on("error", code => new Error(`Worker error with exit code ${code}`));
   worker.on("exit", code =>
-    runService7()
+    runService5()
   );
   worker.postMessage("twice");
   worker.postMessage("three times");
@@ -202,13 +202,13 @@ function runService6(workerData) {
   setTimeout(() => worker.postMessage("you won't see me"), 100);
 }
 
-function runService7(workerData) {
+function runService5(workerData) {
   const worker = new Worker('../crawler2test.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
   worker.on("error", code => new Error(`Worker error with exit code ${code}`));
   worker.on("exit", code =>
-    runService8()
+    runService6()
   );
   worker.postMessage("twice");
   worker.postMessage("three times");
@@ -216,7 +216,7 @@ function runService7(workerData) {
   setTimeout(() => worker.postMessage("you won't see me"), 100);
 }
 
-function runService8(workerData) {
+function runService6(workerData) {
   const worker = new Worker('../nowPlayingMovies/cinemaShowTimes.js', { workerData });
   worker.postMessage("once");
   worker.on("message", incoming => console.log('wtf',{ incoming }));
